@@ -104,15 +104,23 @@ def build_report(cfg: dict, analyses: list[dict], tech_cache: dict, today: dt.da
     }
 
 
-def picks_texts(report: dict, analysts: list[str]) -> list[str]:
+def picks_texts(report: dict, analysts: list[str], status: dict | None = None) -> list[str]:
     """分析師短線推薦：每位分析師一則文字訊息，說明選股理由。"""
     out = []
     for who in analysts:
         lines = [f"📌 {who}｜短線推薦｜{report['date_label']}"]
         items = [(p, [v for v in p["views"] if v["analyst"] == who]) for p in report["picks"]]
         items = [(p, vs) for p, vs in items if vs][:4]
+        st = (status or {}).get(who, {})
         if not items:
-            lines.append("今日影片沒有提到其他短線標的。")
+            if st.get("videos", 1) == 0:
+                lines.append("今日沒有新影片。")
+            elif st and st.get("ok", 0) == 0:
+                lines.append("⚠ 今日影片分析失敗（Gemini 忙線或額度不足），無法整理推薦。")
+            else:
+                lines.append("今日影片沒有提到其他短線標的。")
+        elif st and st.get("ok", 0) < st.get("videos", 0):
+            lines.append(f"（{st['videos']} 支影片中有 {st['videos'] - st['ok']} 支分析失敗，內容可能不完整）")
         for i, (p, vs) in enumerate(items, 1):
             lines.append("")
             lines.append(f"{i}. {p['name']} {p['code']}".strip())
@@ -150,6 +158,7 @@ def cmd_build() -> None:
         return
 
     analyses = []
+    status: dict[str, dict] = {}
     for a in cfg["analysts"]:
         try:
             vids = latest_videos(a["channel_id"], cfg.get("video_window_hours", 26), cfg.get("max_videos_per_analyst", 2))
@@ -157,11 +166,13 @@ def cmd_build() -> None:
             print(f"[warn] 抓 {a['name']} 影片清單失敗：{e}")
             vids = []
         print(f"{a['name']}：{len(vids)} 支新影片")
+        status[a["name"].split("（")[0]] = {"videos": len(vids), "ok": 0}
         for v in vids:
             r = analyze_video(v, a["name"], wl, cfg.get("gemini_model", "gemini-3.8-flash"),
                               cfg.get("gemini_fallback_models", []))
             if r:
                 analyses.append(r)
+                status[a["name"].split("（")[0]]["ok"] += 1
 
     report = build_report(cfg, analyses, tech_cache, max(last_dates) if last_dates else today)
     name = f"{today:%Y%m%d}-{uuid.uuid4().hex[:12]}"
@@ -177,7 +188,7 @@ def cmd_build() -> None:
     sent_file.write_text(json.dumps({"image_date": str(today)}), encoding="utf-8")
     names = [a["name"].split("（")[0] for a in cfg["analysts"]]
     STATE.write_text(json.dumps({"skip": False, "full": f"images/{name}.png", "preview": f"images/{name}-p.png",
-                                 "send_image": send_image, "texts": picks_texts(report, names)},
+                                 "send_image": send_image, "texts": picks_texts(report, names, status)},
                                 ensure_ascii=False), encoding="utf-8")
     print("圖卡已產生：", full)
 
