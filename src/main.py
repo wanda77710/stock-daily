@@ -79,7 +79,7 @@ def build_report(cfg: dict, analyses: list[dict], tech_cache: dict, today: dt.da
                                            f"目標：{p['target']}" if p.get("target") else ""] if x)
             item["views"].append({"analyst": a["analyst"].split("（")[0], "stance": p.get("stance", "偏多"),
                                   "text": p.get("reason", ""), "extra": extra})
-    ranked = sorted(picks.values(), key=lambda x: (-len({v["analyst"] for v in x["views"]}), x["rank"]))[: cfg.get("max_picks", 6)]
+    ranked = sorted(picks.values(), key=lambda x: (-len({v["analyst"] for v in x["views"]}), x["rank"]))[: cfg.get("max_picks", 8)]
 
     # ---- 提醒 ----
     reminders = []
@@ -104,22 +104,26 @@ def build_report(cfg: dict, analyses: list[dict], tech_cache: dict, today: dt.da
     }
 
 
-def picks_text(report: dict) -> str:
-    """分析師短線推薦：用文字說明選股理由。"""
-    lines = [f"📌 分析師短線推薦｜{report['date_label']}"]
-    if not report["picks"]:
-        lines.append("今日兩位分析師沒有提到其他短線標的。")
-    for i, p in enumerate(report["picks"], 1):
-        who = "、".join(dict.fromkeys(v["analyst"] for v in p["views"]))
+def picks_texts(report: dict, analysts: list[str]) -> list[str]:
+    """分析師短線推薦：每位分析師一則文字訊息，說明選股理由。"""
+    out = []
+    for who in analysts:
+        lines = [f"📌 {who}｜短線推薦｜{report['date_label']}"]
+        items = [(p, [v for v in p["views"] if v["analyst"] == who]) for p in report["picks"]]
+        items = [(p, vs) for p, vs in items if vs][:4]
+        if not items:
+            lines.append("今日影片沒有提到其他短線標的。")
+        for i, (p, vs) in enumerate(items, 1):
+            lines.append("")
+            lines.append(f"{i}. {p['name']} {p['code']}".strip())
+            for v in vs:
+                lines.append(f"［{v['stance']}］{v['text']}")
+                if v.get("extra"):
+                    lines.append(f"　{v['extra']}")
         lines.append("")
-        lines.append(f"{i}. {p['name']} {p['code']}（{who}）".replace("  ", " "))
-        for v in p["views"]:
-            lines.append(f"・{v['analyst']}［{v['stance']}］{v['text']}")
-            if v.get("extra"):
-                lines.append(f"　{v['extra']}")
-    lines.append("")
-    lines.append("※ 分析師觀點整理，非投資建議")
-    return "\n".join(lines)
+        lines.append("※ 分析師觀點整理，非投資建議")
+        out.append("\n".join(lines))
+    return out
 
 
 def cmd_build() -> None:
@@ -165,8 +169,15 @@ def cmd_build() -> None:
     full = render(report, str(img_dir / f"{name}.png"))
     prev = make_preview(full, str(img_dir / f"{name}-p.png"))
     (img_dir / f"{name}.json").write_text(json.dumps(analyses, ensure_ascii=False, indent=1), encoding="utf-8")
+    # 圖卡每天只發一次：同一天重跑時只發分析師文字
+    sent_file = img_dir / "sent.json"
+    sent = json.loads(sent_file.read_text(encoding="utf-8")) if sent_file.exists() else {}
+    send_image = sent.get("image_date") != str(today)
+    sent_file.write_text(json.dumps({"image_date": str(today)}), encoding="utf-8")
+    names = [a["name"].split("（")[0] for a in cfg["analysts"]]
     STATE.write_text(json.dumps({"skip": False, "full": f"images/{name}.png", "preview": f"images/{name}-p.png",
-                                 "picks_text": picks_text(report)}, ensure_ascii=False), encoding="utf-8")
+                                 "send_image": send_image, "texts": picks_texts(report, names)},
+                                ensure_ascii=False), encoding="utf-8")
     print("圖卡已產生：", full)
 
 
@@ -180,7 +191,9 @@ def cmd_send() -> None:
     repo = os.environ["GITHUB_REPOSITORY"]
     branch = os.environ.get("GITHUB_REF_NAME", "main")
     base = f"https://raw.githubusercontent.com/{repo}/{branch}/"
-    push([image_msg(base + st["full"], base + st["preview"]), text_msg(st["picks_text"])])
+    msgs = [image_msg(base + st["full"], base + st["preview"])] if st.get("send_image", True) else []
+    msgs += [text_msg(t) for t in st.get("texts", [])]
+    push(msgs[:5])
     print("LINE 推播完成")
 
 
