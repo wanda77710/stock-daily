@@ -45,7 +45,7 @@ def _client() -> genai.Client:
 
 
 def analyze_video(video: dict, analyst: str, watchlist: dict[str, str], model: str,
-                  fallbacks: list[str] | None = None, retries: int = 4) -> dict | None:
+                  fallbacks: list[str] | None = None, retries: int = 3) -> dict | None:
     """Gemini 忙線（503）或暫時錯誤時，等待後重試，並輪流嘗試備用模型。"""
     wl = "、".join(f"{n}({c})" for c, n in watchlist.items())
     prompt = PROMPT.format(analyst=analyst, title=video["title"], watchlist=wl)
@@ -71,6 +71,9 @@ def analyze_video(video: dict, analyst: str, watchlist: dict[str, str], model: s
                 return data
             except Exception as e:
                 last_err = e
+                if "429" in str(e) and "PerDay" in str(e):  # 今日額度已用完，重試也沒用
+                    print(f"[analyst] Gemini 今日額度已用完：{video['url']}")
+                    return None
                 if "404" in str(e) and len(models) > 1:  # 模型已停用或不存在，不再嘗試
                     models.remove(m)
         if i < retries - 1:
