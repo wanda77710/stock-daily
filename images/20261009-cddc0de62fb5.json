@@ -1,0 +1,68 @@
+[
+ {
+  "market_view": "美債殖利率未破5.5%，指數多頭格局未變",
+  "watchlist": [
+   {
+    "code": "2327",
+    "name": "國巨",
+    "mentioned": true,
+    "stance": "偏多",
+    "view": "680附近先獲利，拉回630或頸線有撐為再上車機會",
+    "entry": "拉回630附近或頸線位置區有撐時",
+    "stop": ""
+   },
+   {
+    "code": "8299",
+    "name": "群聯",
+    "mentioned": false,
+    "stance": "中性",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "6223",
+    "name": "旺矽",
+    "mentioned": false,
+    "stance": "中性",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "3211",
+    "name": "順達",
+    "mentioned": false,
+    "stance": "中性",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   }
+  ],
+  "picks": [
+   {
+    "code": "4958",
+    "name": "臻鼎-KY",
+    "stance": "偏多",
+    "view": "",
+    "reason": "1.6T光模組正轉向MSAP製程，線寬線距更細且門檻高。籌碼正沉澱並由特定人集中，600元站穩後有望挑戰650元。",
+    "entry": "",
+    "stop": "",
+    "target": "650"
+   },
+   {
+    "code": "2308",
+    "name": "台達電",
+    "stance": "偏多",
+    "view": "",
+    "reason": "衝到2100元拉回屬正常現象，拉回有撐後有望往2200元邁進，持股續抱即可。",
+    "entry": "",
+    "stop": "",
+    "target": "2200"
+   }
+  ],
+  "analyst": "王映亮（股市映鈔機）",
+  "video_title": "台股關前震盪 一天一主流台積電法說前 設備股有機會｜2026/10/07｜王映亮 分析師｜股市映鈔機",
+  "video_url": "https://www.youtube.com/watch?v=5hPzNfOzpLI"
+ }
+]
