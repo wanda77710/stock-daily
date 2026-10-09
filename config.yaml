@@ -1,0 +1,23 @@
+# ===== 每日選股日報設定 =====
+# 我的關注標的（代號: 名稱）
+watchlist:
+  "2327": 國巨
+  "8299": 群聯
+  "6223": 旺矽
+  "3211": 順達
+
+# 追蹤的分析師 YouTube 頻道
+analysts:
+  - name: 王映亮（股市映鈔機）
+    channel_id: UCBNiFkexNB37xCP7LYnDM0Q
+  - name: 黃宇帆（宇帆隊長）
+    channel_id: UC2MZOEJlDzE4UM0OszSY9yw
+
+# 抓取多久以內的新影片（小時）
+video_window_hours: 26
+# 每位分析師最多分析幾支影片
+max_videos_per_analyst: 2
+# 分析師推薦的標的最多顯示幾檔
+max_picks: 4
+# Gemini 模型（若 Google 推出新版可在這裡改）
+gemini_model: gemini-2.5-flash
