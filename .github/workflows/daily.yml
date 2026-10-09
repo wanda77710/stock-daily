@@ -1,0 +1,60 @@
+name: 每日選股日報
+
+on:
+  schedule:
+    # 台灣時間週一到週五 18:15 啟動（UTC 10:15），約 18:30 前後收到
+    # GitHub 排程尖峰時段可能延遲幾分鐘到數十分鐘
+    - cron: "15 10 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "休市也強制產生（測試用）"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-report
+  cancel-in-progress: false
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: 安裝中文字型
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-cjk
+
+      - name: 安裝套件
+        run: pip install -r requirements.txt
+
+      - name: 產生圖卡
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          FORCE_RUN: ${{ inputs.force && '1' || '0' }}
+        run: python src/main.py build
+
+      - name: 上傳圖卡（並刪除 30 天前的舊圖）
+        run: |
+          python src/main.py cleanup
+          git config user.name "stock-daily-bot"
+          git config user.email "stock-daily-bot@users.noreply.github.com"
+          git add images
+          git commit -m "daily report $(date -u +%F)" || echo "nothing to commit"
+          git push
+          sleep 20
+
+      - name: 推播到 LINE
+        env:
+          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
+        run: python src/main.py send
