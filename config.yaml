@@ -21,3 +21,6 @@ max_videos_per_analyst: 2
 max_picks: 8
 # Gemini 模型（若 Google 推出新版可在這裡改）
 gemini_model: gemini-3.8-flash
+# Gemini 忙線時改用的備用模型（找不到的模型會自動略過）
+gemini_fallback_models:
+  - gemini-flash-latest
