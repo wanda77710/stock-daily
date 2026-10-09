@@ -17,7 +17,7 @@ analysts:
 video_window_hours: 26
 # 每位分析師最多分析幾支影片
 max_videos_per_analyst: 2
-# 分析師推薦的標的最多顯示幾檔
-max_picks: 6
+# 分析師推薦的標的總數上限（每位分析師最多 4 檔）
+max_picks: 8
 # Gemini 模型（若 Google 推出新版可在這裡改）
 gemini_model: gemini-3.8-flash
