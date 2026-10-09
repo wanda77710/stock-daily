@@ -60,6 +60,7 @@ def build_report(cfg: dict, analyses: list[dict], tech_cache: dict, today: dt.da
 
     # ---- 分析師推薦 ----
     picks: dict[str, dict] = {}
+    order: dict[str, int] = {}  # 每位分析師各自的推薦順序，排序時輪流取，避免只出現同一位
     for a in analyses:
         for p in a.get("picks", []):
             code = _clean_code(p.get("code"))
@@ -68,13 +69,17 @@ def build_report(cfg: dict, analyses: list[dict], tech_cache: dict, today: dt.da
             key = code or p.get("name", "")
             if not key:
                 continue
-            item = picks.setdefault(key, {"code": code, "name": p.get("name", ""), "views": []})
+            who = a["analyst"].split("（")[0]
+            rank = order.get(who, 0)
+            order[who] = rank + 1
+            item = picks.setdefault(key, {"code": code, "name": p.get("name", ""), "views": [], "rank": rank})
+            item["rank"] = min(item["rank"], rank)
             extra = "　".join(x for x in [f"進場：{p['entry']}" if p.get("entry") else "",
                                            f"停損：{p['stop']}" if p.get("stop") else "",
                                            f"目標：{p['target']}" if p.get("target") else ""] if x)
             item["views"].append({"analyst": a["analyst"].split("（")[0], "stance": p.get("stance", "偏多"),
                                   "text": p.get("reason", ""), "extra": extra})
-    ranked = sorted(picks.values(), key=lambda x: -len({v["analyst"] for v in x["views"]}))[: cfg.get("max_picks", 4)]
+    ranked = sorted(picks.values(), key=lambda x: (-len({v["analyst"] for v in x["views"]}), x["rank"]))[: cfg.get("max_picks", 6)]
 
     # ---- 提醒 ----
     reminders = []
@@ -149,11 +154,11 @@ def cmd_build() -> None:
             vids = []
         print(f"{a['name']}：{len(vids)} 支新影片")
         for v in vids:
-            r = analyze_video(v, a["name"], wl, cfg.get("gemini_model", "gemini-2.5-flash"))
+            r = analyze_video(v, a["name"], wl, cfg.get("gemini_model", "gemini-3.8-flash"))
             if r:
                 analyses.append(r)
 
-    report = build_report(cfg, analyses, tech_cache, today)
+    report = build_report(cfg, analyses, tech_cache, max(last_dates) if last_dates else today)
     name = f"{today:%Y%m%d}-{uuid.uuid4().hex[:12]}"
     img_dir = ROOT / "images"
     img_dir.mkdir(exist_ok=True)
