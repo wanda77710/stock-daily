@@ -158,7 +158,8 @@ def cmd_build() -> None:
             vids = []
         print(f"{a['name']}：{len(vids)} 支新影片")
         for v in vids:
-            r = analyze_video(v, a["name"], wl, cfg.get("gemini_model", "gemini-3.8-flash"))
+            r = analyze_video(v, a["name"], wl, cfg.get("gemini_model", "gemini-3.8-flash"),
+                              cfg.get("gemini_fallback_models", []))
             if r:
                 analyses.append(r)
 
