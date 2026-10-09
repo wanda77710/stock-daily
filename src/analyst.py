@@ -44,28 +44,36 @@ def _client() -> genai.Client:
     return genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 
 
-def analyze_video(video: dict, analyst: str, watchlist: dict[str, str], model: str, retries: int = 3) -> dict | None:
+def analyze_video(video: dict, analyst: str, watchlist: dict[str, str], model: str,
+                  fallbacks: list[str] | None = None, retries: int = 4) -> dict | None:
+    """Gemini 忙線（503）或暫時錯誤時，等待後重試，並輪流嘗試備用模型。"""
     wl = "、".join(f"{n}({c})" for c, n in watchlist.items())
     prompt = PROMPT.format(analyst=analyst, title=video["title"], watchlist=wl)
     client = _client()
+    models = [model] + [m for m in (fallbacks or []) if m != model]
     last_err = None
     for i in range(retries):
-        try:
-            resp = client.models.generate_content(
-                model=model,
-                contents=types.Content(parts=[
-                    types.Part(file_data=types.FileData(file_uri=video["url"])),
-                    types.Part(text=prompt),
-                ]),
-                config=types.GenerateContentConfig(response_mime_type="application/json", temperature=0.2),
-            )
-            data = json.loads(resp.text)
-            data["analyst"] = analyst
-            data["video_title"] = video["title"]
-            data["video_url"] = video["url"]
-            return data
-        except Exception as e:  # 網路或配額問題時重試
-            last_err = e
-            time.sleep(10 * (i + 1))
+        for m in list(models):
+            try:
+                resp = client.models.generate_content(
+                    model=m,
+                    contents=types.Content(parts=[
+                        types.Part(file_data=types.FileData(file_uri=video["url"])),
+                        types.Part(text=prompt),
+                    ]),
+                    config=types.GenerateContentConfig(response_mime_type="application/json", temperature=0.2),
+                )
+                data = json.loads(resp.text)
+                data["analyst"] = analyst
+                data["video_title"] = video["title"]
+                data["video_url"] = video["url"]
+                data["model"] = m
+                return data
+            except Exception as e:
+                last_err = e
+                if "404" in str(e) and len(models) > 1:  # 模型已停用或不存在，不再嘗試
+                    models.remove(m)
+        if i < retries - 1:
+            time.sleep(30 * (i + 1))
     print(f"[analyst] 影片分析失敗 {video['url']}: {last_err}")
     return None
