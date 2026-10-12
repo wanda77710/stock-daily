@@ -1,0 +1,181 @@
+[
+ {
+  "market_view": "台股蹲完之後有機會再往五萬點去做攻擊",
+  "watchlist": [
+   {
+    "code": "2327",
+    "name": "國巨",
+    "mentioned": true,
+    "stance": "偏多",
+    "view": "拉回頸線守住可承接，後續補量有機會看7字頭甚至8字頭",
+    "entry": "大頸線位置區附近守住可接",
+    "stop": ""
+   },
+   {
+    "code": "8299",
+    "name": "群聯",
+    "mentioned": false,
+    "stance": "中性",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "6223",
+    "name": "旺矽",
+    "mentioned": false,
+    "stance": "中性",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "3211",
+    "name": "順達",
+    "mentioned": true,
+    "stance": "偏多",
+    "view": "9月營收差因產品交替期，後續出8kW/12kW Rubin產品毛利更高",
+    "entry": "",
+    "stop": ""
+   }
+  ],
+  "picks": [
+   {
+    "code": "3030",
+    "name": "德律",
+    "stance": "偏多",
+    "view": "",
+    "reason": "將70%經費投入半導體檢測，推出晶背供電檢測設備及3D AXI方案，明年半導體檢測設備將大爆發，股價在右下角剛轉強。",
+    "entry": "300多元算便宜，右下角剛轉折上來可留意",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "5475",
+    "name": "德宏",
+    "stance": "偏多",
+    "view": "",
+    "reason": "Rubin放量帶動M9商機，關鍵石英布需求大且量產水準全台唯一，EPS已轉正，量能開始放大且股價在頸線位置區。",
+    "entry": "頸線位置區一旦突破且補量可留意",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "3026",
+    "name": "禾伸堂",
+    "stance": "偏多",
+    "view": "",
+    "reason": "被動元件題材，高壓NP0積層陶瓷電容全球市佔高達6成具獨特性，型態沿著軌道慢慢上移，有機會往千元走。",
+    "entry": "",
+    "stop": "",
+    "target": "1000元"
+   },
+   {
+    "code": "4105",
+    "name": "東洋",
+    "stance": "偏多",
+    "view": "",
+    "reason": "流感重症疫情增溫，自費疫苗受惠最直接；近兩年配息4元以上獲利不錯，股價在右下角底部型態慢慢上來。",
+    "entry": "",
+    "stop": "",
+    "target": ""
+   }
+  ],
+  "analyst": "王映亮（股市映鈔機）",
+  "video_title": "美債危機免驚？ 2指標看台股攻5萬關鍵 ｜王映亮 分析師｜東森財經｜財富達給厚｜2026.10.08",
+  "video_url": "https://www.youtube.com/watch?v=fLj4gLJQCS4",
+  "model": "gemini-flash-latest"
+ },
+ {
+  "market_view": "大盤量縮守十日線，拉回整理仍充滿機會",
+  "watchlist": [
+   {
+    "code": "2327",
+    "name": "國巨",
+    "mentioned": true,
+    "stance": "偏多",
+    "view": "大盤拉回時股價居然沒跌，被動元件族群後續仍有戲。",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "8299",
+    "name": "群聯",
+    "mentioned": false,
+    "stance": "中性",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "6223",
+    "name": "旺矽",
+    "mentioned": false,
+    "stance": "中性",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "3211",
+    "name": "順達",
+    "mentioned": false,
+    "stance": "中性",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   }
+  ],
+  "picks": [
+   {
+    "code": "1605",
+    "name": "華新",
+    "stance": "偏多",
+    "reason": "電線電纜受惠基礎電力建設需求，本益比僅11倍尚未發動，上半年獲利優異，具集團作帳與傳產轉電子題材。",
+    "entry": "",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "4958",
+    "name": "臻鼎-KY",
+    "stance": "偏多",
+    "reason": "擴產載板產能被包光，且切入HDI與mSAP光通訊模組板，短線急漲後拉回整理合理，具備挑戰前高潛力。",
+    "entry": "",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "5478",
+    "name": "高技",
+    "stance": "偏多",
+    "reason": "專攻大電流厚銅板利基型PCB，季線附近量縮整理，基本面營收良好，籌碼洗乾淨後有望迎來落後補漲。",
+    "entry": "",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "5243",
+    "name": "乙盛-KY",
+    "stance": "偏多",
+    "reason": "受惠低軌衛星SpaceX、車用與鴻海AI伺服器機構件需求，墨西哥擴產帶動營收創高，業績逐季轉佳。",
+    "entry": "",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "3188",
+    "name": "陽博",
+    "stance": "偏多",
+    "reason": "由PCB設備跨入半導體先進封裝材料領域，第四季邁入設備訂單交貨認列高峰，營收創高且業績加溫。",
+    "entry": "",
+    "stop": "",
+    "target": ""
+   }
+  ],
+  "analyst": "黃宇帆（宇帆隊長）",
+  "video_title": "拉回是機會！資金輪動快！航運揚帆！PCB！被動元件！集團股！｜黃宇帆分析師「宇帆隊長」2026.10.12 13:30 盤後直播",
+  "video_url": "https://www.youtube.com/watch?v=8bP2ab3FukA",
+  "model": "gemini-flash-latest"
+ }
+]
