@@ -40,13 +40,19 @@ PROMPT = """你是投資研究助理。請完整看完這支台股分析影片�
 """
 
 
+CALL_TIMEOUT_SEC = 900  # 等 Gemini 回覆的上限 15 分鐘（影片仍會完整看完；這只防止連線卡死）
+
+
 def _client() -> genai.Client:
-    return genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+    return genai.Client(api_key=os.environ["GEMINI_API_KEY"],
+                        http_options=types.HttpOptions(timeout=CALL_TIMEOUT_SEC * 1000))
 
 
 def analyze_video(video: dict, analyst: str, watchlist: dict[str, str], model: str,
-                  fallbacks: list[str] | None = None, retries: int = 3) -> dict | None:
-    """Gemini 忙線（503）或暫時錯誤時，等待後重試，並輪流嘗試備用模型。"""
+                  fallbacks: list[str] | None = None, retries: int = 3,
+                  deadline: float | None = None) -> dict | None:
+    """Gemini 忙線（503）或暫時錯誤時，等待後重試，並輪流嘗試備用模型。
+    deadline：time.time() 的截止時間；超過就放棄，讓日報先用已完成的內容發出。"""
     wl = "、".join(f"{n}({c})" for c, n in watchlist.items())
     prompt = PROMPT.format(analyst=analyst, title=video["title"], watchlist=wl)
     client = _client()
@@ -54,6 +60,9 @@ def analyze_video(video: dict, analyst: str, watchlist: dict[str, str], model: s
     last_err = None
     for i in range(retries):
         for m in list(models):
+            if deadline and time.time() > deadline - 60:
+                print(f"[analyst] 分析時間已用完，略過：{video['url']}")
+                return None
             try:
                 resp = client.models.generate_content(
                     model=m,
@@ -77,6 +86,8 @@ def analyze_video(video: dict, analyst: str, watchlist: dict[str, str], model: s
                 if "404" in str(e) and len(models) > 1:  # 模型已停用或不存在，不再嘗試
                     models.remove(m)
         if i < retries - 1:
+            if deadline and time.time() + 30 * (i + 1) > deadline - 60:
+                break
             time.sleep(30 * (i + 1))
     print(f"[analyst] 影片分析失敗 {video['url']}: {last_err}")
     return None

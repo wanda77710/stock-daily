@@ -22,7 +22,7 @@ concurrency:
 jobs:
   report:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
 
@@ -41,6 +41,7 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           FORCE_RUN: ${{ inputs.force && '1' || '0' }}
+        timeout-minutes: 75
         run: python src/main.py build
 
       - name: 上傳圖卡（並刪除 30 天前的舊圖）

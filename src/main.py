@@ -157,6 +157,9 @@ def cmd_build() -> None:
         STATE.write_text(json.dumps({"skip": True}), encoding="utf-8")
         return
 
+    import time
+    # 影片分析總時間上限（分鐘）；時間到就用已完成的內容出圖卡，確保一定會發
+    deadline = time.time() + cfg.get("analysis_budget_minutes", 60) * 60
     analyses = []
     status: dict[str, dict] = {}
     for a in cfg["analysts"]:
@@ -169,7 +172,7 @@ def cmd_build() -> None:
         status[a["name"].split("（")[0]] = {"videos": len(vids), "ok": 0}
         for v in vids:
             r = analyze_video(v, a["name"], wl, cfg.get("gemini_model", "gemini-3.8-flash"),
-                              cfg.get("gemini_fallback_models", []))
+                              cfg.get("gemini_fallback_models", []), deadline=deadline)
             if r:
                 analyses.append(r)
                 status[a["name"].split("（")[0]]["ok"] += 1
