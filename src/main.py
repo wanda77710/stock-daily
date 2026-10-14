@@ -104,23 +104,40 @@ def build_report(cfg: dict, analyses: list[dict], tech_cache: dict, today: dt.da
     }
 
 
-def picks_texts(report: dict, analysts: list[str], status: dict | None = None) -> list[str]:
-    """分析師短線推薦：每位分析師一則文字訊息，說明選股理由。"""
+def _short(title: str, n: int = 18) -> str:
+    return title if len(title) <= n else title[:n] + "…"
+
+
+def picks_texts(report: dict, analysts: list[str], status: dict | None = None, final: bool = True) -> list[str]:
+    """分析師短線推薦：每位分析師一則文字訊息，說明選股理由。
+    status[分析師] = {"videos": 影片數, "ok": 成功數, "fails": [(標題, 原因)], "list_error": 抓清單失敗原因}
+    final=False 表示晚上還會自動補跑。"""
+    retry_note = "晚上 20:00、22:00 會自動補跑，成功後補發給你。"
     out = []
     for who in analysts:
         lines = [f"📌 {who}｜短線推薦｜{report['date_label']}"]
         items = [(p, [v for v in p["views"] if v["analyst"] == who]) for p in report["picks"]]
         items = [(p, vs) for p, vs in items if vs][:4]
         st = (status or {}).get(who, {})
-        if not items:
+        fails = st.get("fails", [])
+        if st.get("list_error"):
+            lines.append(f"⚠ 抓不到影片清單：{st['list_error']}")
+            if not final:
+                lines.append(retry_note)
+        elif not items:
             if st.get("videos", 1) == 0:
                 lines.append("今日沒有新影片。")
-            elif st and st.get("ok", 0) == 0:
-                lines.append("⚠ 今日影片分析失敗（Gemini 忙線或額度不足），無法整理推薦。")
+            elif fails and st.get("ok", 0) == 0:
+                lines.append("⚠ 今日影片分析失敗：")
             else:
                 lines.append("今日影片沒有提到其他短線標的。")
-        elif st and st.get("ok", 0) < st.get("videos", 0):
-            lines.append(f"（{st['videos']} 支影片中有 {st['videos'] - st['ok']} 支分析失敗，內容可能不完整）")
+        elif fails:
+            lines.append(f"（{st['videos']} 支影片中有 {len(fails)} 支分析失敗，內容可能不完整）")
+        if fails:
+            for title, reason in fails:
+                lines.append(f"・{_short(title)}：{reason}")
+            if not final:
+                lines.append(retry_note)
         for i, (p, vs) in enumerate(items, 1):
             lines.append("")
             lines.append(f"{i}. {p['name']} {p['code']}".strip())
@@ -134,13 +151,56 @@ def picks_texts(report: dict, analysts: list[str], status: dict | None = None) -
     return out
 
 
+def _state_file(today: dt.date) -> pathlib.Path:
+    return ROOT / "images" / f"state-{today:%Y%m%d}.json"
+
+
+def _run_mode(today_now: dt.datetime) -> str:
+    """full：18:15 主排程；retry：20:00 / 22:00 補跑。手動執行可用 MODE 指定。"""
+    m = os.environ.get("MODE", "auto")
+    if m in ("full", "retry"):
+        return m
+    return "retry" if today_now.hour >= 19 else "full"
+
+
+def _status(cfg: dict, st: dict) -> dict:
+    out = {}
+    for a in cfg["analysts"]:
+        who = a["name"].split("（")[0]
+        vids = [v for v in st["videos"] if v["analyst"] == a["name"]]
+        out[who] = {"videos": len(vids), "ok": sum(v["ok"] for v in vids),
+                    "fails": [(v["title"], v["reason"]) for v in vids if not v["ok"]],
+                    "list_error": st["list_errors"].get(a["name"], "")}
+    return out
+
+
+def _skip(msg: str) -> None:
+    print(msg)
+    STATE.parent.mkdir(exist_ok=True)
+    STATE.write_text(json.dumps({"skip": True}), encoding="utf-8")
+
+
 def cmd_build() -> None:
+    import time
+
     from analyst import analyze_video
     from youtube import latest_videos
 
     cfg = load_config()
-    today = dt.datetime.now(TPE).date()
+    now = dt.datetime.now(TPE)
+    today = now.date()
     wl = {str(k): v for k, v in cfg["watchlist"].items()}
+    mode = _run_mode(now)
+    final = mode == "retry" and now.hour >= 21  # 22:00 那次是最後一次補跑
+    sf = _state_file(today)
+    st = json.loads(sf.read_text(encoding="utf-8")) if sf.exists() else None
+
+    if mode == "retry":
+        if st is None:
+            print("今天的主排程沒有留下紀錄（可能中途中止），改跑完整流程。")
+            mode = "full"
+        elif not any(not v["ok"] for v in st["videos"]) and not st["list_errors"]:
+            return _skip("今天的影片都已分析完成，不需要補跑。")
 
     tech_cache, last_dates = {}, set()
     for code in wl:
@@ -151,48 +211,87 @@ def cmd_build() -> None:
             continue
         tech_cache[code] = tech_summary(df)
         last_dates.add(tech_cache[code]["date"])
-    if today not in last_dates and os.environ.get("FORCE_RUN") != "1":
-        print(f"今天 {today} 沒有新的收盤資料（休市或資料未更新），不發送。")
-        STATE.parent.mkdir(exist_ok=True)
-        STATE.write_text(json.dumps({"skip": True}), encoding="utf-8")
-        return
+    if mode == "full" and today not in last_dates and os.environ.get("FORCE_RUN") != "1":
+        return _skip(f"今天 {today} 沒有新的收盤資料（休市或資料未更新），不發送。")
 
-    import time
-    # 影片分析總時間上限（分鐘）；時間到就用已完成的內容出圖卡，確保一定會發
-    deadline = time.time() + cfg.get("analysis_budget_minutes", 60) * 60
-    analyses = []
-    status: dict[str, dict] = {}
+    if st is None:
+        st = {"date": str(today), "videos": [], "list_errors": {}, "image_sent": False}
+    known = {v["url"] for v in st["videos"]}
+
+    # 抓影片清單：主排程抓全部；補跑只重抓上次失敗的分析師
     for a in cfg["analysts"]:
+        if mode == "retry" and a["name"] not in st["list_errors"]:
+            continue
         try:
             vids = latest_videos(a["channel_id"], cfg.get("video_window_hours", 26), cfg.get("max_videos_per_analyst", 2))
+            st["list_errors"].pop(a["name"], None)
         except Exception as e:
             print(f"[warn] 抓 {a['name']} 影片清單失敗：{e}")
+            st["list_errors"][a["name"]] = "YouTube 頁面讀取失敗"
             vids = []
         print(f"{a['name']}：{len(vids)} 支新影片")
-        status[a["name"].split("（")[0]] = {"videos": len(vids), "ok": 0}
         for v in vids:
-            r = analyze_video(v, a["name"], wl, cfg.get("gemini_model", "gemini-3.8-flash"),
-                              cfg.get("gemini_fallback_models", []), deadline=deadline)
-            if r:
-                analyses.append(r)
-                status[a["name"].split("（")[0]]["ok"] += 1
+            if v["url"] not in known:
+                st["videos"].append({"analyst": a["name"], "url": v["url"], "title": v["title"],
+                                     "ok": False, "reason": "尚未分析", "result": None})
+                known.add(v["url"])
+
+    # 分析：只處理還沒成功的影片（已成功的保留，不重看）
+    deadline = time.time() + cfg.get("analysis_budget_minutes", 60) * 60
+    newly_ok = 0
+    for v in st["videos"]:
+        if v["ok"]:
+            continue
+        r, reason = analyze_video({"url": v["url"], "title": v["title"]}, v["analyst"], wl,
+                                  cfg.get("gemini_model", "gemini-3.8-flash"),
+                                  cfg.get("gemini_fallback_models", []), deadline=deadline)
+        if r:
+            v.update(ok=True, reason="", result=r)
+            newly_ok += 1
+        else:
+            v["reason"] = reason
+        sf.parent.mkdir(exist_ok=True)
+        sf.write_text(json.dumps(st, ensure_ascii=False, indent=1), encoding="utf-8")  # 每支都存檔，中途中止也不會白做
+
+    analyses = [v["result"] for v in st["videos"] if v["ok"]]
+    status = _status(cfg, st)
+    names = [a["name"].split("（")[0] for a in cfg["analysts"]]
+    sf.parent.mkdir(exist_ok=True)
+
+    header = None
+    if mode == "retry" and st.get("image_sent"):
+        if newly_ok == 0 and not final:
+            sf.write_text(json.dumps(st, ensure_ascii=False, indent=1), encoding="utf-8")
+            return _skip("補跑仍未成功，等下一次補跑。")
+        if newly_ok == 0 and final:
+            # 最後一次補跑仍失敗：只傳一則說明原因，不重發圖卡
+            report = build_report(cfg, analyses, tech_cache, max(last_dates) if last_dates else today)
+            lines = [f"⚠ 今日補跑結束，以下影片仍無法分析（{report['date_label']}）"]
+            for who, s_ in status.items():
+                if s_.get("list_error"):
+                    lines.append(f"・{who}：抓不到影片清單（{s_['list_error']}）")
+                for title, reason in s_["fails"]:
+                    lines.append(f"・{who}｜{_short(title)}：{reason}")
+            lines.append("")
+            lines.append("建議直接看原影片；若連續幾天都是額度問題，可以考慮開啟 Gemini 付費額度。")
+            sf.write_text(json.dumps(st, ensure_ascii=False, indent=1), encoding="utf-8")
+            STATE.write_text(json.dumps({"skip": False, "send_image": False, "texts": ["\n".join(lines)]},
+                                        ensure_ascii=False), encoding="utf-8")
+            print("最後一次補跑仍失敗，傳送原因說明。")
+            return
+        header = f"🔁 補發：{newly_ok} 支分析師影片已分析完成，以下是更新後的日報。"
 
     report = build_report(cfg, analyses, tech_cache, max(last_dates) if last_dates else today)
     name = f"{today:%Y%m%d}-{uuid.uuid4().hex[:12]}"
     img_dir = ROOT / "images"
-    img_dir.mkdir(exist_ok=True)
     full = render(report, str(img_dir / f"{name}.png"))
     prev = make_preview(full, str(img_dir / f"{name}-p.png"))
     (img_dir / f"{name}.json").write_text(json.dumps(analyses, ensure_ascii=False, indent=1), encoding="utf-8")
-    # 圖卡每天只發一次：同一天重跑時只發分析師文字
-    sent_file = img_dir / "sent.json"
-    sent = json.loads(sent_file.read_text(encoding="utf-8")) if sent_file.exists() else {}
-    send_image = sent.get("image_date") != str(today)
-    sent_file.write_text(json.dumps({"image_date": str(today)}), encoding="utf-8")
-    names = [a["name"].split("（")[0] for a in cfg["analysts"]]
+    st["image_sent"] = True
+    sf.write_text(json.dumps(st, ensure_ascii=False, indent=1), encoding="utf-8")
+    texts = picks_texts(report, names, status, final=final)
     STATE.write_text(json.dumps({"skip": False, "full": f"images/{name}.png", "preview": f"images/{name}-p.png",
-                                 "send_image": send_image, "texts": picks_texts(report, names, status)},
-                                ensure_ascii=False), encoding="utf-8")
+                                 "send_image": True, "header": header, "texts": texts}, ensure_ascii=False), encoding="utf-8")
     print("圖卡已產生：", full)
 
 
@@ -206,7 +305,9 @@ def cmd_send() -> None:
     repo = os.environ["GITHUB_REPOSITORY"]
     branch = os.environ.get("GITHUB_REF_NAME", "main")
     base = f"https://raw.githubusercontent.com/{repo}/{branch}/"
-    msgs = [image_msg(base + st["full"], base + st["preview"])] if st.get("send_image", True) else []
+    msgs = [text_msg(st["header"])] if st.get("header") else []
+    if st.get("send_image", True):
+        msgs.append(image_msg(base + st["full"], base + st["preview"]))
     msgs += [text_msg(t) for t in st.get("texts", [])]
     push(msgs[:5])
     print("LINE 推播完成")

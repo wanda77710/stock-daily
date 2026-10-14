@@ -5,12 +5,20 @@ on:
     # 台灣時間週一到週五 18:15 啟動（UTC 10:15），約 18:30 前後收到
     # GitHub 排程尖峰時段可能延遲幾分鐘到數十分鐘
     - cron: "15 10 * * 1-5"
+    # 補跑：台灣時間 20:00、22:00，只重做 18:15 那次分析失敗的影片；全部成功就什麼都不做
+    - cron: "0 12 * * 1-5"
+    - cron: "0 14 * * 1-5"
   workflow_dispatch:
     inputs:
       force:
         description: "休市也強制產生（測試用）"
         type: boolean
         default: false
+      mode:
+        description: "auto＝依時間判斷；full＝完整重跑；retry＝只補跑失敗的影片"
+        type: choice
+        options: [auto, full, retry]
+        default: auto
 
 permissions:
   contents: write
@@ -41,6 +49,7 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           FORCE_RUN: ${{ inputs.force && '1' || '0' }}
+          MODE: ${{ inputs.mode || 'auto' }}
         timeout-minutes: 75
         run: python src/main.py build
 
