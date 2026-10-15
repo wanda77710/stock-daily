@@ -1,0 +1,194 @@
+{
+ "date": "2026-10-15",
+ "videos": [
+  {
+   "analyst": "王映亮（股市映鈔機）",
+   "url": "https://www.youtube.com/watch?v=NS8JfG2aqnY",
+   "title": "6天跌掉3000點 還會再跌?｜2026/10/15｜王映亮 分析師｜股市映鈔機",
+   "ok": true,
+   "reason": "",
+   "result": {
+    "market_view": "大跌爆量有轉折機會，不需恐慌殺低",
+    "watchlist": [
+     {
+      "code": "2327",
+      "name": "國巨",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "8299",
+      "name": "群聯",
+      "mentioned": true,
+      "stance": "偏多",
+      "view": "跌到此處不用過度殺低，隨時有機會勾起迎新行情",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "6223",
+      "name": "旺矽",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "3211",
+      "name": "順達",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     }
+    ],
+    "picks": [
+     {
+      "code": "2308",
+      "name": "台達電",
+      "stance": "偏多",
+      "reason": "輝達發布800V架構電源需求，台達電為關鍵解決方案供應商；股價急跌至支撐區是絕佳承接機會。",
+      "entry": "拉回跌停或支撐點時",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "2330",
+      "name": "台積電",
+      "stance": "偏多",
+      "reason": "Q3財報與毛利率超預期，Q4營收估季增14%；股價回測基本支撐點且出量，中長線AI訂單無虞。",
+      "entry": "回測基本支撐區",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "3693",
+      "name": "營邦",
+      "stance": "偏多",
+      "reason": "9月營收月增年增表現亮眼，法說會即將登場，有實質業績支撐不怕盤勢震盪。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     }
+    ],
+    "analyst": "王映亮（股市映鈔機）",
+    "video_title": "6天跌掉3000點 還會再跌?｜2026/10/15｜王映亮 分析師｜股市映鈔機",
+    "video_url": "https://www.youtube.com/watch?v=NS8JfG2aqnY",
+    "model": "gemini-flash-latest"
+   }
+  },
+  {
+   "analyst": "王映亮（股市映鈔機）",
+   "url": "https://www.youtube.com/watch?v=tPGQN_TuGfc",
+   "title": "嚇跌一天就結束？營邦準備主動出擊開法說電源春天正要開始光輝十月還沒結束｜2026/10/14｜王映亮 分析師｜股市映鈔機",
+   "ok": false,
+   "reason": "Gemini 忙線",
+   "result": null
+  },
+  {
+   "analyst": "黃宇帆（宇帆隊長）",
+   "url": "https://www.youtube.com/watch?v=_2enA4EVmTI",
+   "title": "通膨再起！升息機率昇！台股遭暴擊！光學！被動！PTFE！｜黃宇帆分析師｜2026.10.15",
+   "ok": false,
+   "reason": "其他錯誤：Server disconnected without sending a response.",
+   "result": null
+  },
+  {
+   "analyst": "黃宇帆（宇帆隊長）",
+   "url": "https://www.youtube.com/watch?v=kl__W_iOYAE",
+   "title": "通膨再起！升息機率昇！台股遭暴擊！光學！被動！PTFE！｜黃宇帆分析師「宇帆隊長」2026.10.15 13:30 盤後直播",
+   "ok": true,
+   "reason": "",
+   "result": {
+    "market_view": "急跌爆量洗盤，恐慌宣洩後有望逐步止穩",
+    "watchlist": [
+     {
+      "code": "2327",
+      "name": "國巨",
+      "mentioned": true,
+      "stance": "中性",
+      "view": "回測季線且前波有雙重支撐，不需殺跌，但法人賣壓重表現偏弱。",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "8299",
+      "name": "群聯",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "6223",
+      "name": "旺矽",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "3211",
+      "name": "順達",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     }
+    ],
+    "picks": [
+     {
+      "code": "6548",
+      "name": "長科*",
+      "stance": "偏多",
+      "reason": "功率半導體導線架題材，獲本土投信持續買超認養，在大盤暴跌下開低走高逆勢抗跌，籌碼相對穩定有後續動能。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "2355",
+      "name": "敬鵬",
+      "stance": "偏多",
+      "reason": "具備低軌衛星地面接收站PCB備用供應鏈題材，股價剛站上半年線，整理已久且位階相對較低。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "8042",
+      "name": "金山電",
+      "stance": "偏多",
+      "reason": "鋁質電容屬於AI電源架構必要元件，股價位階不高，雖盤中遭遇當沖賣壓，但震盪止穩後仍具備上攻機會。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "2478",
+      "name": "大毅",
+      "stance": "偏多",
+      "reason": "厚膜電阻題材，處於低檔長時間打底整理，在大盤重挫時逆勢抗跌維持紅盤，股本小的二線元件股籌碼較輕。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     }
+    ],
+    "analyst": "黃宇帆（宇帆隊長）",
+    "video_title": "通膨再起！升息機率昇！台股遭暴擊！光學！被動！PTFE！｜黃宇帆分析師「宇帆隊長」2026.10.15 13:30 盤後直播",
+    "video_url": "https://www.youtube.com/watch?v=kl__W_iOYAE",
+    "model": "gemini-3.8-flash"
+   }
+  }
+ ],
+ "list_errors": {},
+ "image_sent": true
+}
