@@ -1,0 +1,212 @@
+{
+ "date": "2026-10-16",
+ "videos": [
+  {
+   "analyst": "王映亮（股市映鈔機）",
+   "url": "https://www.youtube.com/watch?v=1L-Jh1pMKdc",
+   "title": "10月最凶險的已過? 如何判斷?｜2026/10/16｜王映亮 分析師｜股市映鈔機",
+   "ok": false,
+   "reason": "Gemini 忙線",
+   "result": null
+  },
+  {
+   "analyst": "王映亮（股市映鈔機）",
+   "url": "https://www.youtube.com/watch?v=NS8JfG2aqnY",
+   "title": "6天跌掉3000點 還會再跌?｜2026/10/15｜王映亮 分析師｜股市映鈔機",
+   "ok": true,
+   "reason": "",
+   "result": {
+    "market_view": "大跌出量成本墊高，不用過度悲觀殺低",
+    "watchlist": [
+     {
+      "code": "2327",
+      "name": "國巨",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "8299",
+      "name": "群聯",
+      "mentioned": true,
+      "stance": "偏多",
+      "view": "跌至此處不用過度殺低，隨時有機會勾起走出新波段",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "6223",
+      "name": "旺矽",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "3211",
+      "name": "順達",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     }
+    ],
+    "picks": [
+     {
+      "code": "2308",
+      "name": "台達電",
+      "stance": "偏多",
+      "reason": "受惠輝達發布之架構，必採用其電源解決方案，股價拉回跌停或急跌處是勇敢承接的好機會。",
+      "entry": "急跌或跌停位置承接",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "2330",
+      "name": "台積電",
+      "stance": "偏多",
+      "reason": "第三季財報亮眼且第四季營收預估季增14%，AI長線需求明確，回檔觸及基本支撐不需亂砍。",
+      "entry": "回測基本支撐區",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "3693",
+      "name": "營邦",
+      "stance": "偏多",
+      "reason": "9月營收創高且法說會即將登場，具備實質業績題材支撐，不懼大盤震盪拉回。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "4958",
+      "name": "臻鼎-KY",
+      "stance": "偏多",
+      "reason": "股價經得起利空淬鍊，大跌拉回反而營造出良好買點，整理後仍有機會挑戰更高價位。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     }
+    ],
+    "analyst": "王映亮（股市映鈔機）",
+    "video_title": "6天跌掉3000點 還會再跌?｜2026/10/15｜王映亮 分析師｜股市映鈔機",
+    "video_url": "https://www.youtube.com/watch?v=NS8JfG2aqnY",
+    "model": "gemini-3.8-flash"
+   }
+  },
+  {
+   "analyst": "黃宇帆（宇帆隊長）",
+   "url": "https://www.youtube.com/watch?v=cg5G444gVbk",
+   "title": "外資狂賣之後！台股強彈！PCB展在即！概念股狂歡！｜黃宇帆分析師｜2026.10.16",
+   "ok": false,
+   "reason": "Gemini 忙線",
+   "result": null
+  },
+  {
+   "analyst": "黃宇帆（宇帆隊長）",
+   "url": "https://www.youtube.com/watch?v=UkcGGRIH_-w",
+   "title": "外資狂賣之後！台股強彈！PCB展在即！概念股狂歡！｜黃宇帆分析師「宇帆隊長」2026.10.16 13:30 盤後直播",
+   "ok": true,
+   "reason": "",
+   "result": {
+    "market_view": "外資賣壓逐漸消化，下周盤勢有望更好",
+    "watchlist": [
+     {
+      "code": "2327",
+      "name": "國巨",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "8299",
+      "name": "群聯",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "6223",
+      "name": "旺矽",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "3211",
+      "name": "順達",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     }
+    ],
+    "picks": [
+     {
+      "code": "1815",
+      "name": "富喬",
+      "stance": "偏多",
+      "reason": "玻纖布需求旺盛，受惠PTFE題材，作為上游材料具優勢，股價整理後續攻有望突破前高141.5元。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "5498",
+      "name": "凱崴",
+      "stance": "偏多",
+      "reason": "9月營收創歷史高，股價站上季線並放量反彈突破，低價位具補漲機會。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "8042",
+      "name": "金山電",
+      "stance": "偏多",
+      "reason": "被動元件龍頭法說表示需求倍增，股價底檔漸漸墊高呈現收斂整理，有望向上突破。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "2441",
+      "name": "超豐",
+      "stance": "偏多",
+      "reason": "獲利與營收良好、題材佳但股價被低估，低檔整理後外資投信籌碼逐漸進駐，突破前高有望朝7字頭邁進。",
+      "entry": "",
+      "stop": "",
+      "target": "7字頭以上"
+     },
+     {
+      "code": "8070",
+      "name": "長華*",
+      "stance": "偏多",
+      "reason": "導線架具漲價效應，擴產效益持續使營收創新高，投信積極進場護盤，明年法人預估獲利樂觀。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     }
+    ],
+    "analyst": "黃宇帆（宇帆隊長）",
+    "video_title": "外資狂賣之後！台股強彈！PCB展在即！概念股狂歡！｜黃宇帆分析師「宇帆隊長」2026.10.16 13:30 盤後直播",
+    "video_url": "https://www.youtube.com/watch?v=UkcGGRIH_-w",
+    "model": "gemini-3.8-flash"
+   }
+  }
+ ],
+ "list_errors": {},
+ "image_sent": true
+}
