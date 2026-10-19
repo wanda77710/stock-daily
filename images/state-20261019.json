@@ -1,0 +1,305 @@
+{
+ "date": "2026-10-19",
+ "videos": [
+  {
+   "analyst": "王映亮（股市映鈔機）",
+   "url": "https://www.youtube.com/watch?v=eFNEBiN9VRs",
+   "title": "利空很多台股跌不深還會再殺還是低點有限？｜2026/10/19｜王映亮 分析師｜股市映鈔機",
+   "ok": true,
+   "reason": "",
+   "result": {
+    "market_view": "大盤破平台後回測支撐，低點有限勿過度恐慌",
+    "watchlist": [
+     {
+      "code": "2327",
+      "name": "國巨",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "8299",
+      "name": "群聯",
+      "mentioned": true,
+      "stance": "偏多",
+      "view": "韓股記憶體跌無可跌，此處低點有限，趁拉回找機會點勿悲觀",
+      "entry": "趁拉回過程找機會點",
+      "stop": ""
+     },
+     {
+      "code": "6223",
+      "name": "旺矽",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "3211",
+      "name": "順達",
+      "mentioned": true,
+      "stance": "偏多",
+      "view": "11月BBU放量出貨Q4轉佳，回測前期平台交叉區可重新買回",
+      "entry": "回測前期平台交叉位置",
+      "stop": ""
+     }
+    ],
+    "picks": [
+     {
+      "code": "2308",
+      "name": "台達電",
+      "stance": "偏多",
+      "reason": "800V主機櫃長線趨勢不變，營收公佈後利空可望鈍化，股價跌至安全區具反彈利基。",
+      "entry": "1615至1625元附近",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "3693",
+      "name": "營邦",
+      "stance": "偏多",
+      "reason": "AMD機櫃明年出貨估增20倍，9月營收創高，23日將開法說且Q3財報預期亮眼。",
+      "entry": "跌破拉回時逢低承接",
+      "stop": "",
+      "target": "800元至900元"
+     },
+     {
+      "code": "2303",
+      "name": "聯電",
+      "stance": "偏多",
+      "reason": "上半年獲利良好且前三季營收穩健，若拉回使本益比降至約15倍具中長線投資價值。",
+      "entry": "120至125元區間",
+      "stop": "",
+      "target": "160元"
+     },
+     {
+      "code": "3030",
+      "name": "德律",
+      "stance": "偏多",
+      "reason": "Q3最壞情況已過，前三季EPS已超越去年全年；推出先進AOI與AXI檢測設備迎Q4轉機。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "4958",
+      "name": "臻鼎-KY",
+      "stance": "偏多",
+      "reason": "美系外資調升目標價，走勢維持多頭上升軌道且抗跌，基本面與AI業務具長線爆發力。",
+      "entry": "",
+      "stop": "",
+      "target": "1025元"
+     }
+    ],
+    "analyst": "王映亮（股市映鈔機）",
+    "video_title": "利空很多台股跌不深還會再殺還是低點有限？｜2026/10/19｜王映亮 分析師｜股市映鈔機",
+    "video_url": "https://www.youtube.com/watch?v=eFNEBiN9VRs",
+    "model": "gemini-3.8-flash"
+   }
+  },
+  {
+   "analyst": "黃宇帆（宇帆隊長）",
+   "url": "https://www.youtube.com/watch?v=DjogHKG-_Iw",
+   "title": "台股補跌！PCB大軍逆風高飛！｜黃宇帆分析師｜2026.10.17",
+   "ok": true,
+   "reason": "",
+   "result": {
+    "market_view": "大盤季線有撐拉下影線，對第四季行情樂觀看待。",
+    "watchlist": [
+     {
+      "code": "2327",
+      "name": "國巨",
+      "mentioned": true,
+      "stance": "偏多",
+      "view": "產品線完整且競爭力強，外資賣壓將竭，低檔浮現投資價值。",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "8299",
+      "name": "群聯",
+      "mentioned": false,
+      "stance": "",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "6223",
+      "name": "旺矽",
+      "mentioned": false,
+      "stance": "",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "3211",
+      "name": "順達",
+      "mentioned": false,
+      "stance": "",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     }
+    ],
+    "picks": [
+     {
+      "code": "6173",
+      "name": "信昌電",
+      "stance": "偏多",
+      "reason": "減資後跌停打開有買盤承接，台南擴產高階陶瓷粉末與NPO MLCC，產能大增且毛利率高。",
+      "entry": "跌停敲開打開時",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "5498",
+      "name": "凱崴",
+      "stance": "偏多",
+      "reason": "PCB板增厚帶動高階鍍膜鑽針消耗量增加且毛利更高，剛帶量突破創高，展覽題材加持。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "8074",
+      "name": "鉅橡",
+      "stance": "偏多",
+      "reason": "全台高階墊板首選，為載板廠良率關鍵夥伴，具PCB與載板升級題材，強勢亮燈漲停。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "4526",
+      "name": "東台",
+      "stance": "偏多",
+      "reason": "兼具PCB鑽孔機與半導體雷射鑽孔設備，隸屬相關聯盟盟友，股價位階低且具展覽題材性。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "1605",
+      "name": "華新",
+      "stance": "偏多",
+      "reason": "大型股回測季線收斂拉腳，第三季獲利將相當不錯，股價委屈具集團季底作帳補漲機會。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     }
+    ],
+    "analyst": "黃宇帆（宇帆隊長）",
+    "video_title": "台股補跌！PCB大軍逆風高飛！｜黃宇帆分析師｜2026.10.17",
+    "video_url": "https://www.youtube.com/watch?v=DjogHKG-_Iw",
+    "model": "gemini-3.8-flash"
+   }
+  },
+  {
+   "analyst": "黃宇帆（宇帆隊長）",
+   "url": "https://www.youtube.com/watch?v=eGAc93yjCnk",
+   "title": "台股補跌！PCB大軍逆風高飛！｜黃宇帆分析師「宇帆隊長」2026.10.19 13:30 盤後直播",
+   "ok": true,
+   "reason": "",
+   "result": {
+    "market_view": "大盤測季線收腳抗跌，理論上應重回漲勢",
+    "watchlist": [
+     {
+      "code": "2327",
+      "name": "國巨",
+      "mentioned": true,
+      "stance": "偏多",
+      "view": "前低具支撐且外資賣壓將盡，被動元件龍頭投資價值浮現",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "8299",
+      "name": "群聯",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "6223",
+      "name": "旺矽",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "3211",
+      "name": "順達",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     }
+    ],
+    "picks": [
+     {
+      "code": "6173",
+      "name": "信昌電",
+      "mentioned": true,
+      "stance": "偏多",
+      "reason": "減資後補跌，跌停有大單承接；擴產高階陶瓷粉末及NPO高壓MLCC，切入電源穩定關鍵元件。",
+      "entry": "跌停敲開時",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "8074",
+      "name": "鉅橡",
+      "stance": "偏多",
+      "reason": "PCB展受惠股，為高階載板關鍵墊板龍頭耗材廠，高階製程良率必備夥伴。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "5498",
+      "name": "凱崴",
+      "stance": "偏多",
+      "reason": "載板厚度增加帶動鑽針消耗加速，積極擴產高毛利鍍膜鑽針，股價剛突破整理區。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "4526",
+      "name": "東台",
+      "stance": "偏多",
+      "reason": "擁有PCB鑽孔與半導體雷射鑽孔設備技術，股價位階偏低且便宜，受惠PCB展設備商機。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "1605",
+      "name": "華新",
+      "stance": "偏多",
+      "reason": "回測季線有守並拉出下影線收斂，第三季獲利表現不錯，具備年底集團作帳補漲潛力。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     }
+    ],
+    "analyst": "黃宇帆（宇帆隊長）",
+    "video_title": "台股補跌！PCB大軍逆風高飛！｜黃宇帆分析師「宇帆隊長」2026.10.19 13:30 盤後直播",
+    "video_url": "https://www.youtube.com/watch?v=eGAc93yjCnk",
+    "model": "gemini-3.8-flash"
+   }
+  }
+ ],
+ "list_errors": {},
+ "image_sent": true
+}
