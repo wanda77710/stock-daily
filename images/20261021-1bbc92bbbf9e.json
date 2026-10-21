@@ -1,0 +1,361 @@
+[
+ {
+  "market_view": "台幣止穩賣壓告落，台股有望回穩迎大行情",
+  "watchlist": [
+   {
+    "code": "2327",
+    "name": "國巨",
+    "mentioned": true,
+    "stance": "偏多",
+    "view": "受MLCC交期拉長激勵，股價已開始穩住不再破底。",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "8299",
+    "name": "群聯",
+    "mentioned": false,
+    "stance": "中性",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "6223",
+    "name": "旺矽",
+    "mentioned": false,
+    "stance": "中性",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "3211",
+    "name": "順達",
+    "mentioned": false,
+    "stance": "中性",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   }
+  ],
+  "picks": [
+   {
+    "code": "4958",
+    "name": "臻鼎-KY",
+    "stance": "偏多",
+    "reason": "1.6T mSAP產品將大幅貢獻營收，吞噬昨日上影線，外資目標價上看700至1025元，營運動能強勁。",
+    "entry": "",
+    "stop": "",
+    "target": "700~1025元"
+   },
+   {
+    "code": "3673",
+    "name": "TPK-KY",
+    "stance": "偏多",
+    "reason": "攜手封裝廠開發TGV玻璃基板進度領先全台，擴產投資規模大，技術面完成拉回修正且出現N字型上攻。",
+    "entry": "",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "4760",
+    "name": "勤凱",
+    "stance": "偏多",
+    "reason": "身兼被動元件原料供應，並跨入PTFE、TGV填孔膏與散熱材料等高階趨勢題材，200張大戶籌碼逆勢增加。",
+    "entry": "",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "2360",
+    "name": "致茂",
+    "stance": "偏多",
+    "reason": "9月營收佳，掌握CPO、晶片出貨與電源等各類測試需求，800張大戶於下跌過程低接，股價至下緣為進場機會。",
+    "entry": "股價來到下緣區間時",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "3693",
+    "name": "營邦",
+    "stance": "偏多",
+    "reason": "董座申報轉讓僅為提升市場流動性非利空，9月營收跳升至15億元，輝達與超微訂單陸續挹注，即將召開法說。",
+    "entry": "",
+    "stop": "",
+    "target": ""
+   }
+  ],
+  "analyst": "王映亮（股市映鈔機）",
+  "video_title": "新台幣止穩了? 外資賣壓告一段落PCB旺到2029！ 臻鼎-KY吞噬上引線｜2026/10/21｜王映亮 分析師｜股市映鈔機",
+  "video_url": "https://www.youtube.com/watch?v=w67-5ZFgECY",
+  "model": "gemini-flash-latest"
+ },
+ {
+  "market_view": "匯率未穩油價未回，短線V轉難，宜防守控管資金",
+  "watchlist": [
+   {
+    "code": "2327",
+    "name": "國巨",
+    "mentioned": false,
+    "stance": "中性",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "8299",
+    "name": "群聯",
+    "mentioned": false,
+    "stance": "中性",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "6223",
+    "name": "旺矽",
+    "mentioned": false,
+    "stance": "中性",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "3211",
+    "name": "順達",
+    "mentioned": false,
+    "stance": "中性",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   }
+  ],
+  "picks": [
+   {
+    "code": "3693",
+    "name": "營邦",
+    "stance": "偏多",
+    "reason": "通吃AMD Helios與輝達BlueField-4機櫃訂單，9月營收大增創新高，即將參加法說會，法人預估獲利大幅跳升。",
+    "entry": "",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "4958",
+    "name": "臻鼎-KY",
+    "stance": "偏多",
+    "reason": "1.6T光模組mSAP製程接單明確，2026至2027年營收預估大幅成長，型態強勢且外資與本土法人目標價均看高。",
+    "entry": "",
+    "stop": "",
+    "target": "1025"
+   },
+   {
+    "code": "4760",
+    "name": "勤凱",
+    "stance": "偏多",
+    "reason": "合金膏獲台郡認證採用切入PTFE材料，間接打入輝達供應鏈，並跨入散熱蓋板與TGV玻璃基板填孔膏，券商大幅調高目標價。",
+    "entry": "",
+    "stop": "",
+    "target": "543"
+   },
+   {
+    "code": "2360",
+    "name": "致茂",
+    "stance": "偏多",
+    "reason": "受惠晶片、CPO與電源通道檢測需求，營收持續成長，近期股價跌至支撐區為良性承接機會點。",
+    "entry": "",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "3673",
+    "name": "TPK-KY",
+    "stance": "偏多",
+    "reason": "展出先進封裝玻璃基板產品，每股淨值高達99.57元，大幅投入資本擴充產能，股價低於淨值具轉型題材。",
+    "entry": "",
+    "stop": "",
+    "target": ""
+   }
+  ],
+  "analyst": "王映亮（股市映鈔機）",
+  "video_title": "季線不是最重要支撐最重要支撐在這裡?｜2026/10/20｜王映亮 分析師｜股市映鈔機",
+  "video_url": "https://www.youtube.com/watch?v=sQo_b9EK0fs",
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "market_view": "明日理論上要站上季線，中小型股活蹦亂跳",
+  "watchlist": [
+   {
+    "code": "2327",
+    "name": "國巨",
+    "mentioned": true,
+    "stance": "中性",
+    "view": "往上推壓力較大，走勢較華新科弱，但當沖比仍達61%",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "8299",
+    "name": "群聯",
+    "mentioned": false,
+    "stance": "中性",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "6223",
+    "name": "旺矽",
+    "mentioned": false,
+    "stance": "中性",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "3211",
+    "name": "順達",
+    "mentioned": false,
+    "stance": "中性",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   }
+  ],
+  "picks": [
+   {
+    "code": "2492",
+    "name": "華新科",
+    "stance": "偏多",
+    "view": "具代表性且走勢強勢，從月線跳上來，短線點火亮燈漲停，有望挑戰前高",
+    "entry": "",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "6173",
+    "name": "信昌電",
+    "stance": "偏多",
+    "view": "被動元件上游材料且具擴產優勢，跌停打開後吸引買盤直接拉至漲停",
+    "entry": "跌停打開時",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "8042",
+    "name": "金山電",
+    "stance": "偏多",
+    "view": "被動元件拉回後具買點價值，受惠AI伺服器與高階材料需求，盤中亮燈漲停",
+    "entry": "拉回時",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "4958",
+    "name": "臻鼎-KY",
+    "stance": "偏多",
+    "view": "全球最大PCB廠，各類高階板材齊備，大舉擴產以應對未來AI訂單，大幅拉回是買點",
+    "entry": "大幅拉回時",
+    "stop": "",
+    "target": "659"
+   },
+   {
+    "code": "4577",
+    "name": "達航",
+    "stance": "偏多",
+    "view": "PCB高階設備廠，受惠幼獅工業區等擴產及設備交貨任列需求，強勢亮燈漲停",
+    "entry": "",
+    "stop": "",
+    "target": ""
+   }
+  ],
+  "analyst": "黃宇帆（宇帆隊長）",
+  "video_title": "外資超賣！台股大反擊！被動元件！PCB！低軌衞星！｜黃宇帆分析師｜2026.10.21",
+  "video_url": "https://www.youtube.com/watch?v=Z1eKpdc_GHg",
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "market_view": "季線震盪收斂，中小型股活蹦亂跳具獲利機會",
+  "watchlist": [
+   {
+    "code": "2327",
+    "name": "國巨",
+    "mentioned": true,
+    "stance": "中性",
+    "view": "往上推升壓力較大，短線當沖比過高，走勢相對華新科弱勢。",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "8299",
+    "name": "群聯",
+    "mentioned": false,
+    "stance": "",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "6223",
+    "name": "旺矽",
+    "mentioned": false,
+    "stance": "",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "3211",
+    "name": "順達",
+    "mentioned": false,
+    "stance": "",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   }
+  ],
+  "picks": [
+   {
+    "code": "2492",
+    "name": "華新科",
+    "stance": "偏多",
+    "reason": "被動元件指標股，投信大舉買超，短線強勢站回均線並攻上漲停，族群比價效應點火帶動攻擊動能。",
+    "entry": "",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "4958",
+    "name": "臻鼎-KY",
+    "stance": "偏多",
+    "reason": "全球最大PCB廠，積極大舉擴產，涵蓋載板、光通訊、軟板及HDI等完整產品線，後續成長爆發力強，明確建議續抱。",
+    "entry": "",
+    "stop": "",
+    "target": "659"
+   },
+   {
+    "code": "6173",
+    "name": "信昌電",
+    "stance": "偏多",
+    "reason": "華新集團被動元件上游材料廠，受惠高階材料需求與泰國擴產效益，股價強攻漲停展現強烈動能。",
+    "entry": "",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "8042",
+    "name": "金山電",
+    "stance": "偏多",
+    "reason": "切入輝達GB300供應鏈與AI伺服器BBU，泰國新廠投產拓展低軌衛星與新能源應用，亮燈漲停突破。",
+    "entry": "",
+    "stop": "",
+    "target": ""
+   }
+  ],
+  "analyst": "黃宇帆（宇帆隊長）",
+  "video_title": "外資超賣！台股大反擊！被動元件！PCB！低軌衞星！｜黃宇帆分析師「宇帆隊長」2026.10.21 13:30 盤後直播",
+  "video_url": "https://www.youtube.com/watch?v=i21EBpuWW2A",
+  "model": "gemini-3.8-flash"
+ }
+]
