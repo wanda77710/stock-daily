@@ -1,0 +1,39 @@
+{
+ "date": "2026-10-22",
+ "videos": [
+  {
+   "analyst": "王映亮（股市映鈔機）",
+   "url": "https://www.youtube.com/watch?v=FotmXjKDBJ8",
+   "title": "季線失守很嚴重?低點不會太遠營邦跌停怎麼辦?｜2026/10/22｜王映亮 分析師｜股市映鈔機",
+   "ok": false,
+   "reason": "其他錯誤：Server disconnected without sending a response.",
+   "result": null
+  },
+  {
+   "analyst": "王映亮（股市映鈔機）",
+   "url": "https://www.youtube.com/watch?v=xe6xU9Za3dI",
+   "title": "資金提前轉進避\"風\"港 金融.電信.水泥.貨櫃穩盤｜王映亮 分析師｜東森連線｜2026.10.22",
+   "ok": false,
+   "reason": "Gemini 忙線",
+   "result": null
+  },
+  {
+   "analyst": "黃宇帆（宇帆隊長）",
+   "url": "https://www.youtube.com/watch?v=pyi3ZqCXpvo",
+   "title": "颱風假來了！台股震盪！PCB族群輪動！連假後再攻！｜黃宇帆分析師｜2026.10.22",
+   "ok": false,
+   "reason": "Gemini 忙線",
+   "result": null
+  },
+  {
+   "analyst": "黃宇帆（宇帆隊長）",
+   "url": "https://www.youtube.com/watch?v=NR-j-Zk7ktk",
+   "title": "颱風假來了！台股震盪！PCB族群輪動！連假後再攻！｜黃宇帆分析師「宇帆隊長」2026.10.22 13:30 盤後直播",
+   "ok": false,
+   "reason": "Gemini 今日免費額度已用完",
+   "result": null
+  }
+ ],
+ "list_errors": {},
+ "image_sent": true
+}
