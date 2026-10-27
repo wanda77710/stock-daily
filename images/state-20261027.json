@@ -5,16 +5,107 @@
    "analyst": "王映亮（股市映鈔機）",
    "url": "https://www.youtube.com/watch?v=vy3Fud5aDpY",
    "title": "颱風假擋災 千點恐慌被沒收台股將有後福?股市跌深就是最大利多｜2026/10/27｜王映亮 分析師｜股市映鈔機",
-   "ok": false,
-   "reason": "Gemini 忙線",
-   "result": null
+   "ok": true,
+   "reason": "",
+   "result": {
+    "market_view": "颱風假沒收下跌空間，季線有補量具反轉條件",
+    "watchlist": [
+     {
+      "code": "2327",
+      "name": "國巨",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "8299",
+      "name": "群聯",
+      "mentioned": true,
+      "stance": "偏多",
+      "view": "海力士若反攻成功，財報即將公布，群聯有機會重啟漲勢",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "6223",
+      "name": "旺矽",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "3211",
+      "name": "順達",
+      "mentioned": true,
+      "stance": "偏多",
+      "view": "11月高階BBU大量出貨，電源題材加持隨時會噴出",
+      "entry": "",
+      "stop": ""
+     }
+    ],
+    "picks": [
+     {
+      "code": "3693",
+      "name": "營邦",
+      "stance": "偏多",
+      "reason": "Q3營收大跳升且Q4續強，明年AMD、輝達伺服器機櫃訂單三路開花，EPS具備挑戰30元潛力，具大爆發走勢條件。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "4958",
+      "name": "臻鼎-KY",
+      "stance": "偏多",
+      "reason": "型態仍強於大盤，守在起漲紅K點，產品組合與毛利率向上，隨行情回穩有機會向上彈升並收斂。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "2308",
+      "name": "台達電",
+      "stance": "偏多",
+      "reason": "股價跌至年線出量即是反轉訊號，外資倒貨已近尾聲，即將舉辦法說預期表現不差。",
+      "entry": "年線低檔出量處",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "2408",
+      "name": "南亞科",
+      "stance": "偏多",
+      "reason": "記憶體族群本益比偏低，大廠手上現金充裕將回饋股東，半年線止穩後具備反彈百元價差機會。",
+      "entry": "半年線止穩時",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "2383",
+      "name": "台光電",
+      "stance": "偏多",
+      "reason": "AI PCB需求不變，外資與投信籌碼相較穩定，回測9/17大量區低點具備支撐與撿便宜機會。",
+      "entry": "4635元附近",
+      "stop": "",
+      "target": ""
+     }
+    ],
+    "analyst": "王映亮（股市映鈔機）",
+    "video_title": "颱風假擋災 千點恐慌被沒收台股將有後福?股市跌深就是最大利多｜2026/10/27｜王映亮 分析師｜股市映鈔機",
+    "video_url": "https://www.youtube.com/watch?v=vy3Fud5aDpY",
+    "model": "gemini-3.8-flash"
+   }
   },
   {
    "analyst": "王映亮（股市映鈔機）",
    "url": "https://www.youtube.com/watch?v=zRhUzpjH4Is",
    "title": "台股今只是小補跌？季線還能撐？美超級財報周來了 會報喜？爆雷？｜王映亮 分析師｜東森連線｜2026.10.27",
    "ok": false,
-   "reason": "Gemini 忙線",
+   "reason": "Gemini 今日免費額度已用完",
    "result": null
   },
   {
@@ -22,7 +113,7 @@
    "url": "https://www.youtube.com/watch?v=lOmuMlvo9Ps",
    "title": "落後補漲股發動！機器人！工具機！記憶體！｜黃宇帆分析師｜2026.10.27",
    "ok": false,
-   "reason": "Gemini 忙線",
+   "reason": "Gemini 今日免費額度已用完",
    "result": null
   },
   {
