@@ -1,0 +1,130 @@
+{
+ "date": "2026-10-28",
+ "videos": [
+  {
+   "analyst": "王映亮（股市映鈔機）",
+   "url": "https://www.youtube.com/watch?v=q6FnRc3U4RE",
+   "title": "台股果然有後福 10日線站穩衝更高?｜2026/10/28｜王映亮 分析師｜股市映鈔機",
+   "ok": false,
+   "reason": "Gemini 超過 15 分鐘沒有回應",
+   "result": null
+  },
+  {
+   "analyst": "王映亮（股市映鈔機）",
+   "url": "https://www.youtube.com/watch?v=W180T2Qa-R8",
+   "title": "台股拚回季線！日KD將黃金交叉 反彈目標看哪？誰甜甜價可以搶？｜王映亮 分析師｜東森連線｜2026.10.28",
+   "ok": true,
+   "reason": "",
+   "result": {
+    "market_view": "本週盤勢應積極樂觀，站穩十日線多頭信心回歸",
+    "watchlist": [
+     {
+      "code": "2327",
+      "name": "國巨",
+      "mentioned": true,
+      "stance": "偏多",
+      "view": "逼近前低未破不需過度殺低，隨時有望向600至700元攻擊",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "8299",
+      "name": "群聯",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "6223",
+      "name": "旺矽",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "3211",
+      "name": "順達",
+      "mentioned": true,
+      "stance": "偏多",
+      "view": "受惠800V將BBU列為標配，位處箱型下緣，11月拉貨高階品",
+      "entry": "箱型下緣",
+      "stop": ""
+     }
+    ],
+    "picks": [
+     {
+      "code": "4903",
+      "name": "聯光通",
+      "stance": "偏多",
+      "reason": "台鋼集團跨足科技業指標股，年底新增兩座新廠生產光纖，具光棒自製光纖能力，光纖價格飆漲，連續拉回後出現向上轉折。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "2363",
+      "name": "系統",
+      "stance": "偏多",
+      "reason": "併入聯錦半導體切入CPO領域，為聯電集團發展矽光子與CPO中介層IP首選，財報表現亮眼，股價位階處於右下角。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "3673",
+      "name": "TPK-KY",
+      "stance": "偏多",
+      "reason": "砸60億擴充玻璃基板產能，獲日月光花籃祝賀暗示雙方合作，今年本業EPS估逾5元評價偏低，型態準備走N字型上攻。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "2408",
+      "name": "南亞科",
+      "stance": "偏多",
+      "reason": "受惠長鑫優先供應陸廠使DDR4缺口達兩成，股價脫離底部形態，隨韓系大廠大漲有補漲機會，極具轉機空間。",
+      "entry": "",
+      "stop": "",
+      "target": "520至530元附近"
+     },
+     {
+      "code": "6155",
+      "name": "鈞寶",
+      "stance": "偏多",
+      "reason": "輝達800V帶動高電壓被動元件需求，公司主攻電源轉換與變壓器之磁芯鐵芯佔比達六成，低價被動元件不破底具轉強契機。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     }
+    ],
+    "analyst": "王映亮（股市映鈔機）",
+    "video_title": "台股拚回季線！日KD將黃金交叉 反彈目標看哪？誰甜甜價可以搶？｜王映亮 分析師｜東森連線｜2026.10.28",
+    "video_url": "https://www.youtube.com/watch?v=W180T2Qa-R8",
+    "model": "gemini-3.8-flash"
+   }
+  },
+  {
+   "analyst": "黃宇帆（宇帆隊長）",
+   "url": "https://www.youtube.com/watch?v=kRcqaO0rckI",
+   "title": "PCB鬼故事不斷！買點浮現！被動元件！工具機！CPO！｜黃宇帆分析師「宇帆隊長」2026.10.28 13:30 盤後直播",
+   "ok": false,
+   "reason": "Gemini 忙線",
+   "result": null
+  },
+  {
+   "analyst": "黃宇帆（宇帆隊長）",
+   "url": "https://www.youtube.com/watch?v=FOpR2dht4mo",
+   "title": "明天台股會補跌嗎？｜黃宇帆分析師「宇帆隊長」2026.10.26 19:50假日直播",
+   "ok": false,
+   "reason": "Gemini 忙線",
+   "result": null
+  }
+ ],
+ "list_errors": {},
+ "image_sent": true
+}
