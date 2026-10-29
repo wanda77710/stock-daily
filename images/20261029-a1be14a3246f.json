@@ -1,0 +1,259 @@
+[
+ {
+  "market_view": "台股未走空勿過度悲觀，利空消化後具反彈空間",
+  "watchlist": [
+   {
+    "code": "2327",
+    "name": "國巨",
+    "mentioned": true,
+    "stance": "偏多",
+    "view": "法說後尾盤拉起，被動元件族群有買盤支撐表現不弱。",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "8299",
+    "name": "群聯",
+    "mentioned": true,
+    "stance": "偏多",
+    "view": "股價持續墊高且外資投信回補，行情未走完可往更高看。",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "6223",
+    "name": "旺矽",
+    "mentioned": false,
+    "stance": "",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "3211",
+    "name": "順達",
+    "mentioned": false,
+    "stance": "",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   }
+  ],
+  "picks": [
+   {
+    "code": "3693",
+    "name": "營邦",
+    "stance": "偏多",
+    "reason": "股價拉回平台整理區間為留意點；Q3營收佳、Q4續成長，獲輝達、AMD與Meta訂單加持，外資與大股東持股逾51%籌碼穩定。",
+    "entry": "平台整理區間",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "2303",
+    "name": "聯電",
+    "stance": "偏多",
+    "reason": "逼近7月低點且KD指標進入超賣區，未來跨入CPO領域且AI營收佔比將提升，15倍本益比下不宜過度殺低，可分批承接。",
+    "entry": "105元至112.5元區間",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "2308",
+    "name": "台達電",
+    "stance": "偏多",
+    "reason": "已來到7月股災低點超跌區，毛利率微降被市場過度解讀；輝達晶片機櫃確定採用800V架構，電源供應需求龐大，長線展望仍佳。",
+    "entry": "",
+    "stop": "",
+    "target": "1800"
+   },
+   {
+    "code": "2408",
+    "name": "南亞科",
+    "stance": "偏多",
+    "reason": "記憶體為近期焦點族群，底部穩住後拉回站上季線，短線具備反彈獲利空間。",
+    "entry": "",
+    "stop": "",
+    "target": ""
+   }
+  ],
+  "analyst": "王映亮（股市映鈔機）",
+  "video_title": "Google財報不好 為何日韓沒大跌?台股未走空 不要過度悲觀｜2026/10/29｜王映亮 分析師｜股市映鈔機",
+  "video_url": "https://www.youtube.com/watch?v=YYRvSlpRrEY",
+  "model": "gemini-flash-latest"
+ },
+ {
+  "market_view": "大跌反為撿便宜機會，季線扣高勿過度恐慌",
+  "watchlist": [
+   {
+    "code": "2327",
+    "name": "國巨",
+    "mentioned": true,
+    "stance": "偏多",
+    "view": "跌幅不大，跌勢收斂，法說會後有機會帶動被動元件反應",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "8299",
+    "name": "群聯",
+    "mentioned": true,
+    "stance": "偏多",
+    "view": "記憶體模組財報若成為催化劑，有望迎來第二階段攻勢",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "6223",
+    "name": "旺矽",
+    "mentioned": false,
+    "stance": "中性",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "3211",
+    "name": "順達",
+    "mentioned": false,
+    "stance": "中性",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   }
+  ],
+  "picks": [
+   {
+    "code": "3711",
+    "name": "日月光投控",
+    "mentioned": true,
+    "stance": "偏多",
+    "reason": "下午法說會預估表現不錯，前幾日缺口若未被完全回補，多頭攻擊力道有望延續，優於聯發科。",
+    "entry": "壓回到前兩天缺口附近未補",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "2368",
+    "name": "金像電",
+    "mentioned": true,
+    "stance": "偏多",
+    "reason": "受惠AWS財報樂觀預期，且近期參與私募，跌下來具備短打與反彈機會。",
+    "entry": "尾盤再往下壓時適量進場",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "6155",
+    "name": "鈞寶",
+    "mentioned": true,
+    "stance": "偏多",
+    "reason": "62%營收來自變壓器產品，受惠輝達晶片貨櫃需大量800V變壓器題材，低價具抗跌優勢。",
+    "entry": "",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "4903",
+    "name": "聯光通",
+    "mentioned": true,
+    "stance": "偏多",
+    "reason": "具CPO題材，兩座新廠落成將國外光棒拉回做光纖為全台唯一，具獨特性與大轉機題材。",
+    "entry": "拉回到前一日紅K棒二分之一以下",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "4563",
+    "name": "百德",
+    "mentioned": true,
+    "stance": "偏多",
+    "reason": "美國營收占比3至4成，受惠川普暫緩機器人與設備工具機課稅，且有印度大訂單挹注。",
+    "entry": "趁拉回時關注",
+    "stop": "",
+    "target": ""
+   }
+  ],
+  "analyst": "王映亮（股市映鈔機）",
+  "video_title": "跌破昨低！融資昨大增是主因？重量級財報台股震盪 短線致勝術？｜王映亮 分析師｜東森連線｜2026.10.29",
+  "video_url": "https://www.youtube.com/watch?v=g3WIc2p5uHo",
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "market_view": "外資殺融資洗籌碼，不用擔心靜待止跌",
+  "watchlist": [
+   {
+    "code": "2327",
+    "name": "國巨",
+    "mentioned": true,
+    "stance": "偏多",
+    "view": "位階低檔抗跌，法說內容不悲觀，短線先看能否突破686元",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "8299",
+    "name": "群聯",
+    "mentioned": false,
+    "stance": "中性",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "6223",
+    "name": "旺矽",
+    "mentioned": false,
+    "stance": "中性",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "3211",
+    "name": "順達",
+    "mentioned": false,
+    "stance": "中性",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   }
+  ],
+  "picks": [
+   {
+    "code": "2492",
+    "name": "華新科",
+    "mentioned": true,
+    "stance": "偏多",
+    "reason": "投信連續買超，上游材料廠擴產證實高階MLCC需求強勁，盤中逆勢抗跌",
+    "entry": "",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "5469",
+    "name": "瀚宇博",
+    "mentioned": true,
+    "stance": "偏多",
+    "reason": "擴大資本支出佈局高多層板，並切入矽光子與量子運算PCB首發板廠",
+    "entry": "回到生命線（季線）附近支撐",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "4515",
+    "name": "東台",
+    "mentioned": true,
+    "stance": "偏多",
+    "reason": "具PCB鑽孔機切入半導體題材，搭配日本國際工具機展，外資與融資同步買進",
+    "entry": "",
+    "stop": "",
+    "target": ""
+   }
+  ],
+  "analyst": "黃宇帆（宇帆隊長）",
+  "video_title": "強彈之後再重挫！外資殺融資！明天怎麼辦？！｜黃宇帆分析師｜2026.10.29",
+  "video_url": "https://www.youtube.com/watch?v=BWGGqyWGye4",
+  "model": "gemini-3.8-flash"
+ }
+]
