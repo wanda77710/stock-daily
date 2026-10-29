@@ -1,0 +1,85 @@
+[
+ {
+  "market_view": "台股未走空勿過度悲觀，利空消化後具反彈空間",
+  "watchlist": [
+   {
+    "code": "2327",
+    "name": "國巨",
+    "mentioned": true,
+    "stance": "偏多",
+    "view": "法說後尾盤拉起，被動元件族群有買盤支撐表現不弱。",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "8299",
+    "name": "群聯",
+    "mentioned": true,
+    "stance": "偏多",
+    "view": "股價持續墊高且外資投信回補，行情未走完可往更高看。",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "6223",
+    "name": "旺矽",
+    "mentioned": false,
+    "stance": "",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "3211",
+    "name": "順達",
+    "mentioned": false,
+    "stance": "",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   }
+  ],
+  "picks": [
+   {
+    "code": "3693",
+    "name": "營邦",
+    "stance": "偏多",
+    "reason": "股價拉回平台整理區間為留意點；Q3營收佳、Q4續成長，獲輝達、AMD與Meta訂單加持，外資與大股東持股逾51%籌碼穩定。",
+    "entry": "平台整理區間",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "2303",
+    "name": "聯電",
+    "stance": "偏多",
+    "reason": "逼近7月低點且KD指標進入超賣區，未來跨入CPO領域且AI營收佔比將提升，15倍本益比下不宜過度殺低，可分批承接。",
+    "entry": "105元至112.5元區間",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "2308",
+    "name": "台達電",
+    "stance": "偏多",
+    "reason": "已來到7月股災低點超跌區，毛利率微降被市場過度解讀；輝達晶片機櫃確定採用800V架構，電源供應需求龐大，長線展望仍佳。",
+    "entry": "",
+    "stop": "",
+    "target": "1800"
+   },
+   {
+    "code": "2408",
+    "name": "南亞科",
+    "stance": "偏多",
+    "reason": "記憶體為近期焦點族群，底部穩住後拉回站上季線，短線具備反彈獲利空間。",
+    "entry": "",
+    "stop": "",
+    "target": ""
+   }
+  ],
+  "analyst": "王映亮（股市映鈔機）",
+  "video_title": "Google財報不好 為何日韓沒大跌?台股未走空 不要過度悲觀｜2026/10/29｜王映亮 分析師｜股市映鈔機",
+  "video_url": "https://www.youtube.com/watch?v=YYRvSlpRrEY",
+  "model": "gemini-flash-latest"
+ }
+]
