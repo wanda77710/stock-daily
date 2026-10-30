@@ -1,0 +1,314 @@
+{
+ "date": "2026-10-30",
+ "videos": [
+  {
+   "analyst": "王映亮（股市映鈔機）",
+   "url": "https://www.youtube.com/watch?v=a1nEoe94qXA",
+   "title": "AI太燒錢對台廠是壞事？｜2026/10/30｜王映亮 分析師｜股市映鈔機",
+   "ok": true,
+   "reason": "",
+   "result": {
+    "market_view": "不用過度悲觀，AI需求仍在，大盤回穩將反攻",
+    "watchlist": [
+     {
+      "code": "2327",
+      "name": "國巨",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "8299",
+      "name": "群聯",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "6223",
+      "name": "旺矽",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "3211",
+      "name": "順達",
+      "mentioned": true,
+      "stance": "偏多",
+      "view": "跌至起漲平台區跌無可跌，11月高階BBU出貨營收跳升將迎反攻",
+      "entry": "",
+      "stop": ""
+     }
+    ],
+    "picks": [
+     {
+      "code": "2308",
+      "name": "台達電",
+      "stance": "偏多",
+      "reason": "Q3庫存壓力Q4消除，Q4營收優於Q3，明年部分產品漲價，且搭上輝達伺服器拉貨，股價已跌回3至4月起漲點，具長線支撐。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "6274",
+      "name": "台燿",
+      "stance": "偏多",
+      "reason": "股價回檔修正至先前大量區的平台位置區，浮額清洗後浮現買點機會，後續仍具備反彈動能。",
+      "entry": "大量區平台位置區",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "4958",
+      "name": "臻鼎-KY",
+      "stance": "偏多",
+      "reason": "前期套牢區籌碼已逐步消化完畢，若大盤止穩不深跌，年底前仍有另一波向上攻堅的機會。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "6117",
+      "name": "迎廣",
+      "stance": "偏多",
+      "reason": "9月營收跳升至15億元，Q3與Q4營運維持高標，基本面與財報表現亮眼，隨AI資金歸隊後具備強勁反攻契機。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     }
+    ],
+    "analyst": "王映亮（股市映鈔機）",
+    "video_title": "AI太燒錢對台廠是壞事？｜2026/10/30｜王映亮 分析師｜股市映鈔機",
+    "video_url": "https://www.youtube.com/watch?v=a1nEoe94qXA",
+    "model": "gemini-3.8-flash"
+   }
+  },
+  {
+   "analyst": "王映亮（股市映鈔機）",
+   "url": "https://www.youtube.com/watch?v=YYRvSlpRrEY",
+   "title": "Google財報不好 為何日韓沒大跌?台股未走空 不要過度悲觀｜2026/10/29｜王映亮 分析師｜股市映鈔機",
+   "ok": true,
+   "reason": "",
+   "result": {
+    "market_view": "台股未走空，指數反映過度，不需過度悲觀",
+    "watchlist": [
+     {
+      "code": "2327",
+      "name": "國巨",
+      "mentioned": true,
+      "stance": "偏多",
+      "view": "開法說會後尾盤拉上來，被動元件表現有撐。",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "8299",
+      "name": "群聯",
+      "mentioned": true,
+      "stance": "偏多",
+      "view": "股價持續墊高，外資投信回補，行情還沒走完，等拉高再出。",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "6223",
+      "name": "旺矽",
+      "mentioned": false,
+      "stance": "",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "3211",
+      "name": "順達",
+      "mentioned": false,
+      "stance": "",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     }
+    ],
+    "picks": [
+     {
+      "code": "2303",
+      "name": "聯電",
+      "stance": "偏多",
+      "reason": "已逼近7月低點區，KD指標進入超賣區且MACD有望收斂，未來進軍CPO與AI佔比提升，短線不需殺低，具波段承接機會。",
+      "entry": "105元至112.5元區間",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "2308",
+      "name": "台達電",
+      "stance": "偏多",
+      "reason": "毛利率僅季減1%被市場過度解讀，股價已達7月股災低點超賣區，輝達新架構採用800V電源題材明確，具強勁基本面支撐。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "2408",
+      "name": "南亞科",
+      "stance": "偏多",
+      "reason": "記憶體族群本週為重頭戲，底部穩住後拉升至季線，短線具備反彈獲利空間。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "3693",
+      "name": "營邦",
+      "stance": "偏多",
+      "reason": "回跌至平台整理區間為留意買點，Q3營收佳且Q4續成長，擁有輝達、AMD、Meta等大客戶水冷伺服器機櫃訂單題材。",
+      "entry": "平台整理區間下緣",
+      "stop": "",
+      "target": ""
+     }
+    ],
+    "analyst": "王映亮（股市映鈔機）",
+    "video_title": "Google財報不好 為何日韓沒大跌?台股未走空 不要過度悲觀｜2026/10/29｜王映亮 分析師｜股市映鈔機",
+    "video_url": "https://www.youtube.com/watch?v=YYRvSlpRrEY",
+    "model": "gemini-flash-latest"
+   }
+  },
+  {
+   "analyst": "黃宇帆（宇帆隊長）",
+   "url": "https://www.youtube.com/watch?v=06hFuKrO2fs",
+   "title": "外資重捶暴擊台股！融資撤逃！法說都成法會！11月台股還有救嗎？｜黃宇帆分析師｜2026.10.30",
+   "ok": true,
+   "reason": "",
+   "result": {
+    "market_view": "靜待賣壓宣洩完畢，下週一不急著進場",
+    "watchlist": [
+     {
+      "code": "2327",
+      "name": "國巨",
+      "mentioned": true,
+      "stance": "偏多",
+      "view": "500元以下相對便宜，歷史統計11月易漲，下週適合買",
+      "entry": "500元以下相對便宜，下週適合買",
+      "stop": ""
+     },
+     {
+      "code": "8299",
+      "name": "群聯",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "6223",
+      "name": "旺矽",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "3211",
+      "name": "順達",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     }
+    ],
+    "picks": [
+     {
+      "code": "6274",
+      "name": "台燿",
+      "stance": "偏多",
+      "view": "",
+      "reason": "回測季線位置後跌破又拉出紅K，顯示玻纖布與PCB族群需求並未消失，具備後續動能，長線甚至有機會挑戰四位數。",
+      "entry": "",
+      "stop": "",
+      "target": "四位數"
+     }
+    ],
+    "analyst": "黃宇帆（宇帆隊長）",
+    "video_title": "外資重捶暴擊台股！融資撤逃！法說都成法會！11月台股還有救嗎？｜黃宇帆分析師｜2026.10.30",
+    "video_url": "https://www.youtube.com/watch?v=06hFuKrO2fs",
+    "model": "gemini-flash-latest"
+   }
+  },
+  {
+   "analyst": "黃宇帆（宇帆隊長）",
+   "url": "https://www.youtube.com/watch?v=Pg9DM6P7i3A",
+   "title": "外資重捶暴擊台股！融資撤逃！法說變成法會！11月台股還有救嗎？｜黃宇帆分析師「宇帆隊長」2026.10.30 13:30 盤後直播",
+   "ok": true,
+   "reason": "",
+   "result": {
+    "market_view": "靜待賣壓宣洩籌碼沉澱，下週一先觀望勿急接",
+    "watchlist": [
+     {
+      "code": "2327",
+      "name": "國巨",
+      "mentioned": true,
+      "stance": "偏多",
+      "view": "跌破500元已相對便宜，歷史11月漲率高，下週適合買進",
+      "entry": "500元以下或下週",
+      "stop": ""
+     },
+     {
+      "code": "8299",
+      "name": "群聯",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "6223",
+      "name": "旺矽",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "3211",
+      "name": "順達",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     }
+    ],
+    "picks": [
+     {
+      "code": "6213",
+      "name": "聯茂",
+      "stance": "偏多",
+      "reason": "PCB與CCL需求依然旺盛，雖然跌破月線但靠近季線位置，後續具備強勁動能，值得持續好好追蹤。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     }
+    ],
+    "analyst": "黃宇帆（宇帆隊長）",
+    "video_title": "外資重捶暴擊台股！融資撤逃！法說變成法會！11月台股還有救嗎？｜黃宇帆分析師「宇帆隊長」2026.10.30 13:30 盤後直播",
+    "video_url": "https://www.youtube.com/watch?v=Pg9DM6P7i3A",
+    "model": "gemini-flash-latest"
+   }
+  }
+ ],
+ "list_errors": {},
+ "image_sent": true
+}
