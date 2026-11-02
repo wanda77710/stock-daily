@@ -1,0 +1,264 @@
+[
+ {
+  "market_view": "台股基本面未變，油價回落後可望短V反彈",
+  "watchlist": [
+   {
+    "code": "2327",
+    "name": "國巨",
+    "mentioned": false,
+    "stance": "中性",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "8299",
+    "name": "群聯",
+    "mentioned": true,
+    "stance": "偏多",
+    "view": "外資趁拉回持續買超，記憶體報價轉看漲，後續有機會上攻",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "6223",
+    "name": "旺矽",
+    "mentioned": false,
+    "stance": "中性",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "3211",
+    "name": "順達",
+    "mentioned": true,
+    "stance": "偏多",
+    "view": "跌回底部支撐區適合進場，Q3獲利季增72%，高階BBU將出貨",
+    "entry": "回到相對底部低點時（11/02加碼買回）",
+    "stop": ""
+   }
+  ],
+  "picks": [
+   {
+    "code": "3673",
+    "name": "TPK-KY",
+    "stance": "偏多",
+    "view": "",
+    "reason": "與工研院合作玻璃基板技術領先，樣板尺寸接近台積電需求，未來有望送認證並具轉機性題材。",
+    "entry": "",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "4958",
+    "name": "臻鼎-KY",
+    "stance": "偏多",
+    "view": "",
+    "reason": "玻璃基板使面積變大帶動ABF載板需求，股價跌到平台支撐區且投信持續買超，準備再度轉強。",
+    "entry": "相對平台支撐區",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "3693",
+    "name": "營邦",
+    "stance": "偏多",
+    "view": "",
+    "reason": "跌至半年線具支撐，Q3單季EPS預估超過一個股本，Q4獲利維持高檔，跌深浮現新機會。",
+    "entry": "半年線有支撐處",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "2308",
+    "name": "台達電",
+    "stance": "偏多",
+    "view": "",
+    "reason": "基本面無虞，部分產品第四季至明年初將漲價反映成本，毛利率可望維持高檔，籌碼跌深後帶量收紅。",
+    "entry": "",
+    "stop": "",
+    "target": ""
+   }
+  ],
+  "analyst": "王映亮（股市映鈔機）",
+  "video_title": "台股最慘情境如何?止穩了嗎?AI融資持續對台灣其實是利多｜2026/11/02｜王映亮 分析師｜股市映鈔機",
+  "video_url": "https://www.youtube.com/watch?v=4eElZQN8-zw",
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "market_view": "盤勢漸進超跌區，短線殺多後醞釀反彈轉折",
+  "watchlist": [
+   {
+    "code": "2327",
+    "name": "國巨",
+    "mentioned": true,
+    "stance": "偏多",
+    "view": "逼近7月低點且KD出現底背離跡象，大盤止穩後有反彈空間",
+    "entry": "等待大盤止穩訊號出現",
+    "stop": ""
+   },
+   {
+    "code": "8299",
+    "name": "群聯",
+    "mentioned": false,
+    "stance": "中性",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "6223",
+    "name": "旺矽",
+    "mentioned": false,
+    "stance": "中性",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "3211",
+    "name": "順達",
+    "mentioned": true,
+    "stance": "偏多",
+    "view": "BBU概念股具支撐，跌到此價位不太再跌，走勢相對抗跌",
+    "entry": "",
+    "stop": ""
+   }
+  ],
+  "picks": [
+   {
+    "code": "4903",
+    "name": "聯光通",
+    "stance": "偏多",
+    "reason": "CPO發展帶動光纖需求倍增與報價上漲，自國外拉回光棒進行光纖加工為全台唯一，大盤重挫下抗跌走強。",
+    "entry": "拉回時注意佈局",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "6108",
+    "name": "競國",
+    "stance": "偏多",
+    "reason": "切入DDR5 PCB與高速傳輸板，財報由虧轉盈，型態強於大盤，股價在月線有撐未跌破。",
+    "entry": "月線未跌破時逢低承接",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "4563",
+    "name": "百德",
+    "stance": "偏多",
+    "reason": "美不加徵機器人與機械關稅之受惠股，美國營收佔比達三至四成且近期接單暢旺，爆發力道強。",
+    "entry": "",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "4533",
+    "name": "協易機",
+    "stance": "偏多",
+    "reason": "股價跌至右下角具利基，為特斯拉供應伺服沖床，並具備氫燃料電池金屬雙極板題材。",
+    "entry": "",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "1815",
+    "name": "富喬",
+    "stance": "偏多",
+    "reason": "PCB概念股中領先不跌，股價連半年線都沒碰觸，在均線前轉折向上，型態表現最強。",
+    "entry": "均線支撐有守時佈局",
+    "stop": "",
+    "target": ""
+   }
+  ],
+  "analyst": "王映亮（股市映鈔機）",
+  "video_title": "台股本益比跌到16倍太超過？KD進超跌區？何時黃金交叉？｜王映亮 分析師｜東森連線｜2026.11.02",
+  "video_url": "https://www.youtube.com/watch?v=RBXCuQXwIkA",
+  "model": "gemini-3.8-flash"
+ },
+ {
+  "market_view": "外資已超賣，選舉前震盪但後市偏樂觀看好",
+  "watchlist": [
+   {
+    "code": "2327",
+    "name": "國巨",
+    "mentioned": true,
+    "stance": "中性",
+    "view": "被動元件龍頭未來成長在，但目前外資賣壓壓抑、籌碼混亂。",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "8299",
+    "name": "群聯",
+    "mentioned": false,
+    "stance": "中性",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "6223",
+    "name": "旺矽",
+    "mentioned": false,
+    "stance": "中性",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "3211",
+    "name": "順達",
+    "mentioned": false,
+    "stance": "中性",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   }
+  ],
+  "picks": [
+   {
+    "code": "1605",
+    "name": "華新",
+    "stance": "偏多",
+    "reason": "本益比僅約10倍具獲利與轉投資收益，受惠重電與電線電纜基礎建設需求，股價不貴且具上漲空間，建議續抱。",
+    "entry": "",
+    "stop": "",
+    "target": "40幾元以上"
+   },
+   {
+    "code": "2301",
+    "name": "光寶科",
+    "stance": "偏多",
+    "reason": "法說會後股價修正已差不多，近期連續出現下影線收腳打底，顯示下檔買盤支撐強勁。",
+    "entry": "",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "5340",
+    "name": "建榮",
+    "stance": "偏多",
+    "reason": "AI材料與PCB上游玻纖布族群，受惠日東紡Low-DK題材，籌碼穩定強勢攻上漲停。",
+    "entry": "",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "8042",
+    "name": "金山電",
+    "stance": "偏多",
+    "reason": "被動元件中具實質獲利的公司，股價位階不算高，回測支撐後走勢並未轉弱，基本面良好。",
+    "entry": "",
+    "stop": "",
+    "target": ""
+   }
+  ],
+  "analyst": "黃宇帆（宇帆隊長）",
+  "video_title": "美國期中選舉前震盪格局！個股籌碼穩定度決定後勢！先求止跌！才能反彈！｜黃宇帆分析師｜2026.11.02",
+  "video_url": "https://www.youtube.com/watch?v=70EKWI6HPOM",
+  "model": "gemini-flash-latest"
+ }
+]
