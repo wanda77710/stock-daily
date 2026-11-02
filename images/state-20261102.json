@@ -288,9 +288,82 @@
    "analyst": "黃宇帆（宇帆隊長）",
    "url": "https://www.youtube.com/watch?v=UkejZOOxOJs",
    "title": "美國期中選舉前震盪格局！個股籌碼穩定度決定後勢！先求止跌！才能反彈！｜黃宇帆分析師「宇帆隊長」2026.11.02 13:30 盤後直播",
-   "ok": false,
-   "reason": "Gemini 忙線",
-   "result": null
+   "ok": true,
+   "reason": "",
+   "result": {
+    "market_view": "選前震盪收斂，外資超賣後盤勢趨穩樂觀看待",
+    "watchlist": [
+     {
+      "code": "2327",
+      "name": "國巨",
+      "mentioned": true,
+      "stance": "中性",
+      "view": "被動元件龍頭未來EPS具成長性，但外資賣壓在且籌碼亂，短線尷尬整理",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "8299",
+      "name": "群聯",
+      "mentioned": false,
+      "stance": "",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "6223",
+      "name": "旺矽",
+      "mentioned": false,
+      "stance": "",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "3211",
+      "name": "順達",
+      "mentioned": false,
+      "stance": "",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     }
+    ],
+    "picks": [
+     {
+      "code": "1605",
+      "name": "華新",
+      "stance": "偏多",
+      "reason": "電線電纜為AI電力基礎建設核心，本益比僅約10倍且獲利與轉投資收益佳，股價評價偏低不貴，建議續抱看好後續表現。",
+      "entry": "",
+      "stop": "",
+      "target": "40幾元以上"
+     },
+     {
+      "code": "2301",
+      "name": "光寶科",
+      "stance": "偏多",
+      "reason": "法說會後股價修正已差不多，底部連續拉出下影線收腳，下檔浮現買盤強勁支撐，籌碼沉澱後後勢趨於樂觀。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "5340",
+      "name": "建榮",
+      "stance": "偏多",
+      "reason": "玻纖布屬於AI伺服器關鍵上游原料，扮演供應鏈最源頭的賣鏟子角色，轉型效益顯現且籌碼相對穩定強攻漲停。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     }
+    ],
+    "analyst": "黃宇帆（宇帆隊長）",
+    "video_title": "美國期中選舉前震盪格局！個股籌碼穩定度決定後勢！先求止跌！才能反彈！｜黃宇帆分析師「宇帆隊長」2026.11.02 13:30 盤後直播",
+    "video_url": "https://www.youtube.com/watch?v=UkejZOOxOJs",
+    "model": "gemini-3.8-flash"
+   }
   }
  ],
  "list_errors": {},
