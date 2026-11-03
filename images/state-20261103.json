@@ -1,0 +1,39 @@
+{
+ "date": "2026-11-03",
+ "videos": [
+  {
+   "analyst": "王映亮（股市映鈔機）",
+   "url": "https://www.youtube.com/watch?v=hoVe7Gg_wp0",
+   "title": "明天見關鍵低點? 機會很大禍兮福之所倚 危機中隨時有轉機｜2026/11/03｜王映亮 分析師｜股市映鈔機",
+   "ok": false,
+   "reason": "Gemini 忙線",
+   "result": null
+  },
+  {
+   "analyst": "王映亮（股市映鈔機）",
+   "url": "https://www.youtube.com/watch?v=UYOr7-CbDmQ",
+   "title": "華邦電.環球晶今下午法說 高層能給信心？能期待像樣反彈？｜王映亮 分析師｜東森連線｜2026.11.03",
+   "ok": false,
+   "reason": "Gemini 忙線",
+   "result": null
+  },
+  {
+   "analyst": "黃宇帆（宇帆隊長）",
+   "url": "https://www.youtube.com/watch?v=fhQtILePv-4",
+   "title": "台股持續下跌！外資還沒賣完？！族群性不強！個股自行突圍！｜黃宇帆分析師「宇帆隊長」2026.11.03 13:30 盤後直播",
+   "ok": false,
+   "reason": "其他錯誤：Server disconnected without sending a response.",
+   "result": null
+  },
+  {
+   "analyst": "黃宇帆（宇帆隊長）",
+   "url": "https://www.youtube.com/watch?v=6EVTy2WNh0o",
+   "title": "台股持續下跌！外資還沒賣完？！族群性不強！個股自行突圍！｜黃宇帆分析師｜2026.11.03",
+   "ok": false,
+   "reason": "Gemini 今日免費額度已用完",
+   "result": null
+  }
+ ],
+ "list_errors": {},
+ "image_sent": true
+}
