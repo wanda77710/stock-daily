@@ -5,24 +5,191 @@
    "analyst": "王映亮（股市映鈔機）",
    "url": "https://www.youtube.com/watch?v=N7nNRl-F5t4",
    "title": "關鍵轉折已現新階段行情啟動｜2026/11/04｜王映亮 分析師｜股市映鈔機",
-   "ok": false,
-   "reason": "Gemini 忙線",
-   "result": null
+   "ok": true,
+   "reason": "",
+   "result": {
+    "market_view": "大盤完成ABC波下殺，融資沉澱迎關鍵轉折",
+    "watchlist": [
+     {
+      "code": "2327",
+      "name": "國巨",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "8299",
+      "name": "群聯",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "6223",
+      "name": "旺矽",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "3211",
+      "name": "順達",
+      "mentioned": true,
+      "stance": "偏多",
+      "view": "跌無可跌屬超跌，10月營收公布後11月看成長，有機會迅速回400元以上",
+      "entry": "",
+      "stop": ""
+     }
+    ],
+    "picks": [
+     {
+      "code": "3693",
+      "name": "營邦",
+      "stance": "偏多",
+      "view": "",
+      "reason": "受惠AMD MI455X第四季擴大部署，參與Helios機櫃設計，跌至主力成本區且轉買超，10月營收看月增10%起跳",
+      "entry": "",
+      "stop": "",
+      "target": "800元"
+     },
+     {
+      "code": "3673",
+      "name": "TPK-KY",
+      "stance": "偏多",
+      "view": "",
+      "reason": "玻璃基板技術最領先、產能規劃最早，股價回融資成本區且未破前低，具大廠密切合作題材，整理後有望往上走",
+      "entry": "",
+      "stop": "",
+      "target": "81元以上"
+     },
+     {
+      "code": "2308",
+      "name": "台達電",
+      "stance": "偏多",
+      "view": "",
+      "reason": "與AI高度關聯，跌至此處已跌無可跌，成交量已殺出且融資停損，待輝達及AMD機櫃出貨後有機會勾起回升",
+      "entry": "",
+      "stop": "",
+      "target": "1750至1850元以上"
+     }
+    ],
+    "analyst": "王映亮（股市映鈔機）",
+    "video_title": "關鍵轉折已現新階段行情啟動｜2026/11/04｜王映亮 分析師｜股市映鈔機",
+    "video_url": "https://www.youtube.com/watch?v=N7nNRl-F5t4",
+    "model": "gemini-3.8-flash"
+   }
   },
   {
    "analyst": "王映亮（股市映鈔機）",
    "url": "https://www.youtube.com/watch?v=UYOr7-CbDmQ",
    "title": "華邦電.環球晶今下午法說 高層能給信心？能期待像樣反彈？｜王映亮 分析師｜東森連線｜2026.11.03",
-   "ok": false,
-   "reason": "Gemini 忙線",
-   "result": null
+   "ok": true,
+   "reason": "",
+   "result": {
+    "market_view": "大盤處於ABC波修正尾聲，融資落底將現反彈",
+    "watchlist": [
+     {
+      "code": "2327",
+      "name": "國巨",
+      "mentioned": true,
+      "stance": "中性",
+      "view": "股價逼近7月股災低點，產業面OK但短線籌碼恐慌",
+      "entry": "等大盤明顯止穩後再做操作考量",
+      "stop": ""
+     },
+     {
+      "code": "8299",
+      "name": "群聯",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "6223",
+      "name": "旺矽",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "3211",
+      "name": "順達",
+      "mentioned": false,
+      "stance": "中性",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     }
+    ],
+    "picks": [
+     {
+      "code": "1802",
+      "name": "台玻",
+      "stance": "偏多",
+      "reason": "玻纖布看好擴廠，位階相對較低且投信連買，下跌時展現抗跌力道。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "1815",
+      "name": "富喬",
+      "stance": "偏多",
+      "reason": "投信連續買超，玻纖布族群具擴廠利多，落底後具備拉升潛力。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "3081",
+      "name": "聯亞",
+      "stance": "偏多",
+      "reason": "CPO指標股，雷射磷化銦需求強，形態優於同族群，尚未跌破7月低點，反攻時將為先鋒。",
+      "entry": "下跌過程中分批關注",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "4903",
+      "name": "聯光通",
+      "stance": "偏多",
+      "reason": "低價CPO概念股，跨入光纖光棒且年底兩座廠房落成，盤整區間抗跌且有墊高跡象。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "2454",
+      "name": "聯發科",
+      "stance": "偏多",
+      "reason": "前瞻本益比已降至相對合理區間，待這波融資下壓清洗完畢後具勝率。",
+      "entry": "前瞻本益比接近20到21倍之間接",
+      "stop": "",
+      "target": ""
+     }
+    ],
+    "analyst": "王映亮（股市映鈔機）",
+    "video_title": "華邦電.環球晶今下午法說 高層能給信心？能期待像樣反彈？｜王映亮 分析師｜東森連線｜2026.11.03",
+    "video_url": "https://www.youtube.com/watch?v=UYOr7-CbDmQ",
+    "model": "gemini-3.8-flash"
+   }
   },
   {
    "analyst": "黃宇帆（宇帆隊長）",
    "url": "https://www.youtube.com/watch?v=wqM__CqcFPI",
    "title": "還沒殺完？！誰能逆風抗跌反攻！！｜黃宇帆分析師｜2026.11.4",
    "ok": false,
-   "reason": "Gemini 忙線",
+   "reason": "Gemini 今日免費額度已用完",
    "result": null
   },
   {
