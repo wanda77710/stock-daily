@@ -1,0 +1,130 @@
+{
+ "date": "2026-11-05",
+ "videos": [
+  {
+   "analyst": "王映亮（股市映鈔機）",
+   "url": "https://www.youtube.com/watch?v=BCPXk2_xcB0",
+   "title": "行情會在絕望中重生 明年美國50GW基建難以撼動｜2026/11/05｜王映亮 分析師｜股市映鈔機",
+   "ok": false,
+   "reason": "Gemini 忙線",
+   "result": null
+  },
+  {
+   "analyst": "王映亮（股市映鈔機）",
+   "url": "https://www.youtube.com/watch?v=kutS77cPTWU",
+   "title": "眾達.汎銓走高！反映Coherent財報？穩懋跌破季線！融資大增是主因？｜王映亮 分析師｜東森連線｜2026.11.05",
+   "ok": true,
+   "reason": "",
+   "result": {
+    "market_view": "行情接近尾聲將反轉，AI監管擔憂消化不超三天",
+    "watchlist": [
+     {
+      "code": "2327",
+      "name": "國巨",
+      "mentioned": false,
+      "stance": "",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "8299",
+      "name": "群聯",
+      "mentioned": true,
+      "stance": "偏多",
+      "view": "跌至起漲點跌無可跌，融資大降且連兩天下影線有人吃貨，不需殺低等反彈",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "6223",
+      "name": "旺矽",
+      "mentioned": false,
+      "stance": "",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     },
+     {
+      "code": "3211",
+      "name": "順達",
+      "mentioned": false,
+      "stance": "",
+      "view": "",
+      "entry": "",
+      "stop": ""
+     }
+    ],
+    "picks": [
+     {
+      "code": "4977",
+      "name": "眾達-KY",
+      "stance": "偏多",
+      "reason": "受惠Coherent財報優與博通高階外置雷射模組合作放量，法人估明年EPS達9.6元，年增率250%，有望突破箱型整理。",
+      "entry": "大盤回穩或下半場拉升時",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "3693",
+      "name": "營邦",
+      "stance": "偏多",
+      "reason": "受惠AMD加大布局，Q3獲利佳且Q4會更好，預估全年EPS超過一個股本，拉回整理可逢低留意，跌深反彈爆發力強。",
+      "entry": "拉回過程中尋求低接",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "6830",
+      "name": "汎銓",
+      "stance": "偏多",
+      "reason": "受惠Coherent財報優異激勵CPO族群，且與測試大廠安立知合作切入CPO檢測，股價抗跌強勢創波段短高。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "3576",
+      "name": "聯合再生",
+      "stance": "偏多",
+      "reason": "民主黨政策利多太陽能，與中美晶在美建置1GW太陽能廠明年投產，可望搶攻美國近2%市場份額，受惠政策與轉單題材。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     },
+     {
+      "code": "2618",
+      "name": "長榮航",
+      "stance": "偏多",
+      "reason": "原油價格重挫有利航空成本降低，外資近期積極加碼，股價整理已久剛突破創新高，短線具起飛空間。",
+      "entry": "",
+      "stop": "",
+      "target": ""
+     }
+    ],
+    "analyst": "王映亮（股市映鈔機）",
+    "video_title": "眾達.汎銓走高！反映Coherent財報？穩懋跌破季線！融資大增是主因？｜王映亮 分析師｜東森連線｜2026.11.05",
+    "video_url": "https://www.youtube.com/watch?v=kutS77cPTWU",
+    "model": "gemini-3.8-flash"
+   }
+  },
+  {
+   "analyst": "黃宇帆（宇帆隊長）",
+   "url": "https://www.youtube.com/watch?v=a152XCcAY1c",
+   "title": "美選後換劇本!藍朝色海嘯衝擊AI神話?揖斐電崩18%?載板倒地 PCB汰弱留強?｜黃宇帆分析師｜2026/11/05",
+   "ok": false,
+   "reason": "Gemini 忙線",
+   "result": null
+  },
+  {
+   "analyst": "黃宇帆（宇帆隊長）",
+   "url": "https://www.youtube.com/watch?v=7nWcqoiGRLo",
+   "title": "外資還沒砍完？！民主黨大勝！潔淨能源政策概念抬頭！｜黃宇帆分析師｜2026.11.5",
+   "ok": false,
+   "reason": "Gemini 忙線",
+   "result": null
+  }
+ ],
+ "list_errors": {},
+ "image_sent": true
+}
