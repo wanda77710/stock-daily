@@ -1,0 +1,99 @@
+[
+ {
+  "market_view": "恐慌殺盤帶量換手，下周不悲觀看好反彈",
+  "watchlist": [
+   {
+    "code": "2327",
+    "name": "國巨",
+    "mentioned": true,
+    "stance": "中性",
+    "view": "法說EPS佳卻遭外資拋售破線，若沒賣此時也不必殺低。",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "8299",
+    "name": "群聯",
+    "mentioned": false,
+    "stance": "",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "6223",
+    "name": "旺矽",
+    "mentioned": false,
+    "stance": "",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   },
+   {
+    "code": "3211",
+    "name": "順達",
+    "mentioned": false,
+    "stance": "",
+    "view": "",
+    "entry": "",
+    "stop": ""
+   }
+  ],
+  "picks": [
+   {
+    "code": "5469",
+    "name": "瀚宇博",
+    "mentioned": true,
+    "stance": "偏多",
+    "reason": "華新集團第一檔宣示買回庫藏股1000張（區間65~80元），盤中自跌停拉起展現護盤決心。",
+    "entry": "",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "6449",
+    "name": "鈺邦",
+    "mentioned": true,
+    "stance": "偏多",
+    "reason": "大盤摜破年線時股價仍強守在季線之上，為近期被動元件族群中表現最強勢抗跌指標。",
+    "entry": "",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "2330",
+    "name": "台積電",
+    "mentioned": true,
+    "stance": "偏多",
+    "reason": "國安基金若進場護盤的首要標的，跌深出現大量，適合中長線抗戰與資產配置。",
+    "entry": "",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "1815",
+    "name": "富喬",
+    "mentioned": true,
+    "stance": "偏多",
+    "reason": "盤中由跌停強勢敲開並拉抬至平盤（漲幅達10%），低檔具買盤積極換手力道。",
+    "entry": "",
+    "stop": "",
+    "target": ""
+   },
+   {
+    "code": "8341",
+    "name": "日友",
+    "mentioned": true,
+    "stance": "偏多",
+    "reason": "有日東紡大股東持股，籌碼相對穩定，跌停敲開後迅速拉升，為玻纖布中抗跌代表。",
+    "entry": "",
+    "stop": "",
+    "target": ""
+   }
+  ],
+  "analyst": "黃宇帆（宇帆隊長）",
+  "video_title": "恐慌性賣盤背後藏著強力反彈！賣的掉很重要，因為有人要買！｜黃宇帆分析師｜2026.11.6",
+  "video_url": "https://www.youtube.com/watch?v=5rzReJ9crPk",
+  "model": "gemini-3.8-flash"
+ }
+]
